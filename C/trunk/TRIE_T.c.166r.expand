@@ -1,0 +1,3148 @@
+
+;; Function traverse_nodo (traverse_nodo, funcdef_no=59, decl_uid=2459, cgraph_uid=59)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 12 failed.
+Forwarding edge 2->4 to 12 failed.
+Edge 10->4 redirected to 12
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 12 failed.
+Deleted label in block 4.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 15 0 21 NOTE_INSN_DELETED)
+(note 21 15 16 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 16 21 17 2 (set (reg/v/f:DI 76 [ t ])
+        (reg:DI 5 di [ t ])) ./trunk/TRIE_T.c:262 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/v/f:DI 77 [ function ])
+        (reg:DI 4 si [ function ])) ./trunk/TRIE_T.c:262 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/v/f:DI 78 [ arg ])
+        (reg:DI 1 dx [ arg ])) ./trunk/TRIE_T.c:262 -1
+     (nil))
+(note 19 18 23 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 23 19 24 2 (var_location:DI ap (reg/v/f:DI 76 [ t ])) ./trunk/TRIE_T.c:262 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:SI nivel (const_int 0 [0])) ./trunk/TRIE_T.c:263 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 76 [ t ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:265 -1
+     (nil))
+(jump_insn 26 25 27 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) ./trunk/TRIE_T.c:265 -1
+     (expr_list:REG_BR_PROB (const_int 8986 [0x231a])
+        (nil))
+ -> 30)
+(note 27 26 28 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 28 27 29 4 (set (pc)
+        (label_ref 63)) -1
+     (nil)
+ -> 63)
+(barrier 29 28 30)
+(code_label 30 29 31 5 2 "" [1 uses])
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:SI (plus:DI (reg/v/f:DI 76 [ t ])
+                    (const_int 528 [0x210])) [4 t_5(D)->control+0 S4 A64])
+            (const_int 1 [0x1]))) ./trunk/TRIE_T.c:268 -1
+     (nil))
+(jump_insn 33 32 34 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) ./trunk/TRIE_T.c:268 -1
+     (expr_list:REG_BR_PROB (const_int 8629 [0x21b5])
+        (nil))
+ -> 38)
+(note 34 33 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 6 (set (reg:DI 4 si)
+        (reg/v/f:DI 78 [ arg ])) ./trunk/TRIE_T.c:269 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:DI 5 di)
+        (reg/v/f:DI 76 [ t ])) ./trunk/TRIE_T.c:269 -1
+     (nil))
+(call_insn 37 36 38 6 (call (mem:QI (reg/v/f:DI 77 [ function ]) [0 *function_9(D) S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:269 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(code_label 38 37 39 7 3 "" [1 uses])
+(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 20 7 (var_location:SI nivel (const_int 0 [0])) -1
+     (nil))
+(insn 20 40 60 7 (set (reg:DI 73 [ ivtmp.42 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:262 -1
+     (nil))
+(code_label 60 20 41 8 6 "" [1 uses])
+(note 41 60 42 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 42 41 43 8 (var_location:SI nivel (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 43 42 44 8 (set (reg/f:DI 75 [ D.2816 ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 76 [ t ])
+                (reg:DI 73 [ ivtmp.42 ])) [3 MEM[base: t_5(D), index: ivtmp.42_3, offset: 0B]+0 S8 A64])) ./trunk/TRIE_T.c:273 -1
+     (nil))
+(insn 44 43 45 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 75 [ D.2816 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:273 -1
+     (nil))
+(jump_insn 45 44 46 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) ./trunk/TRIE_T.c:273 -1
+     (expr_list:REG_BR_PROB (const_int 3017 [0xbc9])
+        (nil))
+ -> 51)
+(note 46 45 47 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 9 (set (reg:DI 1 dx)
+        (reg/v/f:DI 78 [ arg ])) ./trunk/TRIE_T.c:274 -1
+     (nil))
+(insn 48 47 49 9 (set (reg:DI 4 si)
+        (reg/v/f:DI 77 [ function ])) ./trunk/TRIE_T.c:274 -1
+     (nil))
+(insn 49 48 50 9 (set (reg:DI 5 di)
+        (reg/f:DI 75 [ D.2816 ])) ./trunk/TRIE_T.c:274 -1
+     (nil))
+(call_insn 50 49 51 9 (call (mem:QI (symbol_ref:DI ("traverse_nodo") [flags 0x3]  <function_decl 0x2b1845569100 traverse_nodo>) [0 traverse_nodo S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:274 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (nil)))))
+(code_label 51 50 52 10 4 "" [1 uses])
+(note 52 51 53 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 10 (var_location:SI nivel (debug_expr:SI D#3)) ./trunk/TRIE_T.c:272 -1
+     (nil))
+(debug_insn 54 53 55 10 (var_location:SI nivel (debug_expr:SI D#3)) -1
+     (nil))
+(insn 55 54 57 10 (parallel [
+            (set (reg:DI 73 [ ivtmp.42 ])
+                (plus:DI (reg:DI 73 [ ivtmp.42 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 57 55 58 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 73 [ ivtmp.42 ])
+            (const_int 512 [0x200]))) ./trunk/TRIE_T.c:272 -1
+     (nil))
+(jump_insn 58 57 59 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 63)
+            (pc))) ./trunk/TRIE_T.c:272 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 156 [0x9c])
+        (nil))
+ -> 63)
+(note 59 58 61 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 61 59 62 11 (set (pc)
+        (label_ref 60)) -1
+     (nil)
+ -> 60)
+(barrier 62 61 63)
+(code_label 63 62 64 12 1 "" [2 uses])
+(note 64 63 0 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+
+;; Function novoNodo (novoNodo, funcdef_no=40, decl_uid=2325, cgraph_uid=40)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+deleting block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 3 0 6 NOTE_INSN_DELETED)
+(note 6 3 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 6 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 4 9 2 (set (reg:DI 5 di)
+        (const_int 536 [0x218])) ./trunk/TRIE_T.c:33 -1
+     (nil))
+(call_insn 9 8 10 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x2b18453fd000 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:33 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg/f:DI 64)
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:33 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 64)
+        (nil)))
+(insn 11 10 12 2 (set (reg/v/f:DI 62 [ a ])
+        (reg/f:DI 64)) ./trunk/TRIE_T.c:33 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:DI a (reg/v/f:DI 62 [ a ])) ./trunk/TRIE_T.c:33 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:35 -1
+     (nil))
+(debug_insn 14 13 5 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(insn 5 14 25 2 (set (reg:DI 61 [ ivtmp.54 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:33 -1
+     (nil))
+(code_label 25 5 15 4 18 "" [1 uses])
+(note 15 25 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 17 16 18 4 (set (mem/f:DI (plus:DI (reg/v/f:DI 62 [ a ])
+                (reg:DI 61 [ ivtmp.54 ])) [3 MEM[base: a_5, index: ivtmp.54_11, offset: 0B]+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:36 -1
+     (nil))
+(debug_insn 18 17 19 4 (var_location:SI i (debug_expr:SI D#4)) ./trunk/TRIE_T.c:35 -1
+     (nil))
+(debug_insn 19 18 20 4 (var_location:SI i (debug_expr:SI D#4)) -1
+     (nil))
+(insn 20 19 21 4 (parallel [
+            (set (reg:DI 61 [ ivtmp.54 ])
+                (plus:DI (reg:DI 61 [ ivtmp.54 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 21 20 22 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 61 [ ivtmp.54 ])
+            (const_int 512 [0x200]))) ./trunk/TRIE_T.c:35 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/TRIE_T.c:35 -1
+     (expr_list:REG_BR_PROB (const_int 156 [0x9c])
+        (nil))
+ -> 28)
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 26 5 (var_location:SI i (debug_expr:SI D#4)) -1
+     (nil))
+(jump_insn 26 24 27 5 (set (pc)
+        (label_ref 25)) -1
+     (nil)
+ -> 25)
+(barrier 27 26 28)
+(code_label 28 27 29 6 17 "" [1 uses])
+(note 29 28 30 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 6 (set (mem/f:DI (plus:DI (reg/v/f:DI 62 [ a ])
+                (const_int 512 [0x200])) [2 a_5->aux+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:39 -1
+     (nil))
+(insn 31 30 32 6 (set (mem:SI (plus:DI (reg/v/f:DI 62 [ a ])
+                (const_int 528 [0x210])) [4 a_5->control+0 S4 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:40 -1
+     (nil))
+(insn 32 31 33 6 (set (mem/f:DI (plus:DI (reg/v/f:DI 62 [ a ])
+                (const_int 520 [0x208])) [2 a_5->info+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:41 -1
+     (nil))
+(insn 33 32 37 6 (set (reg:DI 63 [ <retval> ])
+        (reg/v/f:DI 62 [ a ])) ./trunk/TRIE_T.c:42 -1
+     (nil))
+(insn 37 33 40 6 (set (reg/i:DI 0 ax)
+        (reg:DI 63 [ <retval> ])) ./trunk/TRIE_T.c:43 -1
+     (nil))
+(insn 40 37 0 6 (use (reg/i:DI 0 ax)) ./trunk/TRIE_T.c:43 -1
+     (nil))
+
+;; Function deleteHelper (deleteHelper, funcdef_no=54, decl_uid=2423, cgraph_uid=54)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+deleting block 21
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 21 into block 20...
+Merged blocks 20 and 21.
+Merged 20 and 21 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 5 0 15 NOTE_INSN_DELETED)
+(note 15 5 6 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 6 15 7 2 (set (reg/v/f:DI 85 [ pNode ])
+        (reg:DI 5 di [ pNode ])) ./trunk/TRIE_T.c:176 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/v/f:DI 86 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/TRIE_T.c:176 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/v:SI 87 [ level ])
+        (reg:SI 1 dx [ level ])) ./trunk/TRIE_T.c:176 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/v:SI 88 [ len ])
+        (reg:SI 2 cx [ len ])) ./trunk/TRIE_T.c:176 -1
+     (nil))
+(note 10 9 17 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 17 10 18 2 (var_location:DI D#2 (entry_value:DI (reg:DI 5 di [ pNode ])) [uninit]) -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 85 [ pNode ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:176 -1
+     (nil))
+(jump_insn 19 18 28 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) ./trunk/TRIE_T.c:176 -1
+     (expr_list:REG_BR_PROB (const_int 8986 [0x231a])
+        (nil))
+ -> 23)
+(code_label 28 19 20 4 24 "" [5 uses])
+(note 20 28 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 20 21 4 (set (reg:SI 63 [ D.2850 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:205 -1
+     (nil))
+(jump_insn 21 14 22 4 (set (pc)
+        (label_ref 108)) -1
+     (nil)
+ -> 108)
+(barrier 22 21 23)
+(code_label 23 22 24 5 21 "" [1 uses])
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v:SI 87 [ level ])
+            (reg/v:SI 88 [ len ]))) ./trunk/TRIE_T.c:177 -1
+     (nil))
+(jump_insn 26 25 27 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) ./trunk/TRIE_T.c:177 -1
+     (expr_list:REG_BR_PROB (const_int 5123 [0x1403])
+        (nil))
+ -> 54)
+(note 27 26 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 29 27 30 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:SI (plus:DI (reg/v/f:DI 85 [ pNode ])
+                    (const_int 528 [0x210])) [4 pNode_6(D)->control+0 S4 A64])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:178 -1
+     (nil))
+(jump_insn 30 29 31 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/TRIE_T.c:178 -1
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 28)
+(note 31 30 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 7 (set (mem:SI (plus:DI (reg/v/f:DI 85 [ pNode ])
+                (const_int 528 [0x210])) [4 pNode_6(D)->control+0 S4 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:179 -1
+     (nil))
+(debug_insn 33 32 34 7 (var_location:DI nodo (reg/v/f:DI 85 [ pNode ])) ./trunk/TRIE_T.c:179 -1
+     (nil))
+(debug_insn 34 33 35 7 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:49 -1
+     (nil))
+(debug_insn 35 34 11 7 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(insn 11 35 51 7 (set (reg:DI 64 [ ivtmp.65 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:179 -1
+     (nil))
+(code_label 51 11 36 8 26 "" [1 uses])
+(note 36 51 37 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 8 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 38 37 39 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f:DI (plus:DI (reg/v/f:DI 85 [ pNode ])
+                    (reg:DI 64 [ ivtmp.65 ])) [3 MEM[base: pNode_6(D), index: ivtmp.65_45, offset: 0B]+0 S8 A64])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:50 -1
+     (nil))
+(jump_insn 39 38 40 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/TRIE_T.c:50 -1
+     (expr_list:REG_BR_PROB (const_int 450 [0x1c2])
+        (nil))
+ -> 28)
+(note 40 39 41 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 41 40 42 9 (var_location:SI i (debug_expr:SI D#5)) ./trunk/TRIE_T.c:49 -1
+     (nil))
+(debug_insn 42 41 43 9 (var_location:SI i (debug_expr:SI D#5)) -1
+     (nil))
+(insn 43 42 44 9 (parallel [
+            (set (reg:DI 64 [ ivtmp.65 ])
+                (plus:DI (reg:DI 64 [ ivtmp.65 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 44 43 45 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 64 [ ivtmp.65 ])
+            (const_int 512 [0x200]))) ./trunk/TRIE_T.c:49 -1
+     (nil))
+(jump_insn 45 44 101 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 49)
+            (pc))) ./trunk/TRIE_T.c:49 -1
+     (expr_list:REG_BR_PROB (const_int 9836 [0x266c])
+        (nil))
+ -> 49)
+(code_label 101 45 46 10 28 "" [1 uses])
+(note 46 101 13 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 13 46 47 10 (set (reg:SI 63 [ D.2850 ])
+        (const_int 1 [0x1])) ./trunk/TRIE_T.c:182 -1
+     (nil))
+(jump_insn 47 13 48 10 (set (pc)
+        (label_ref 108)) ./trunk/TRIE_T.c:49 -1
+     (nil)
+ -> 108)
+(barrier 48 47 49)
+(code_label 49 48 50 11 25 "" [1 uses])
+(note 50 49 52 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 52 50 53 11 (set (pc)
+        (label_ref 51)) ./trunk/TRIE_T.c:49 -1
+     (nil)
+ -> 51)
+(barrier 53 52 54)
+(code_label 54 53 55 12 23 "" [1 uses])
+(note 55 54 113 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 113 55 56 12 (var_location:DI D#7 (sign_extend:DI (reg/v:SI 87 [ level ]))) -1
+     (nil))
+(debug_insn 56 113 57 12 (var_location:SI index (plus:SI (sign_extend:SI (mem:QI (plus:DI (debug_expr:DI D#7)
+                    (reg/v/f:DI 86 [ key ])) [0 *_14+0 S1 A8]))
+        (const_int -48 [0xffffffffffffffd0]))) ./trunk/TRIE_T.c:190 -1
+     (nil))
+(insn 57 56 58 12 (set (reg:DI 89 [ D.2851 ])
+        (sign_extend:DI (reg/v:SI 87 [ level ]))) ./trunk/TRIE_T.c:190 -1
+     (nil))
+(insn 58 57 59 12 (set (reg:SI 90 [ D.2850 ])
+        (sign_extend:SI (mem:QI (plus:DI (reg/v/f:DI 86 [ key ])
+                    (reg:DI 89 [ D.2851 ])) [0 *_14+0 S1 A8]))) ./trunk/TRIE_T.c:190 -1
+     (nil))
+(insn 59 58 60 12 (parallel [
+            (set (reg:SI 91 [ index ])
+                (plus:SI (reg:SI 90 [ D.2850 ])
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:190 -1
+     (nil))
+(insn 60 59 61 12 (set (reg:DI 92 [ D.2851 ])
+        (sign_extend:DI (reg:SI 91 [ index ]))) -1
+     (nil))
+(insn 61 60 62 12 (parallel [
+            (set (reg:DI 93 [ D.2851 ])
+                (ashift:DI (reg:DI 92 [ D.2851 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 62 61 63 12 (parallel [
+            (set (reg/f:DI 79 [ D.2856 ])
+                (plus:DI (reg/v/f:DI 85 [ pNode ])
+                    (reg:DI 93 [ D.2851 ])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 63 62 64 12 (parallel [
+            (set (reg:SI 94 [ D.2850 ])
+                (plus:SI (reg/v:SI 87 [ level ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(insn 64 63 65 12 (set (reg:SI 2 cx)
+        (reg/v:SI 88 [ len ])) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(insn 65 64 66 12 (set (reg:SI 1 dx)
+        (reg:SI 94 [ D.2850 ])) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(insn 66 65 67 12 (set (reg:DI 4 si)
+        (reg/v/f:DI 86 [ key ])) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(insn 67 66 68 12 (set (reg:DI 5 di)
+        (mem/f:DI (reg/f:DI 79 [ D.2856 ]) [3 MEM[(struct NODO *)_33]+0 S8 A64])) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(call_insn 68 67 69 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("deleteHelper") [flags 0x3]  <function_decl 0x2b1845557c00 deleteHelper>) [0 deleteHelper S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:192 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 69 68 70 12 (set (reg:SI 73 [ D.2850 ])
+        (reg:SI 0 ax)) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(insn 70 69 71 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 73 [ D.2850 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:192 -1
+     (nil))
+(jump_insn 71 70 72 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/TRIE_T.c:192 -1
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 28)
+(note 72 71 73 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 74 13 (set (reg/f:DI 80 [ D.2854 ])
+        (mem/f:DI (reg/f:DI 79 [ D.2856 ]) [3 MEM[(struct NODO *)_33]+0 S8 A64])) ./trunk/TRIE_T.c:193 -1
+     (nil))
+(insn 74 73 75 13 (set (reg/f:DI 74 [ D.2855 ])
+        (mem/f:DI (plus:DI (reg/f:DI 80 [ D.2854 ])
+                (const_int 520 [0x208])) [2 _22->info+0 S8 A64])) ./trunk/TRIE_T.c:193 -1
+     (nil))
+(insn 75 74 76 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 74 [ D.2855 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:193 -1
+     (nil))
+(jump_insn 76 75 77 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 83)
+            (pc))) ./trunk/TRIE_T.c:193 -1
+     (expr_list:REG_BR_PROB (const_int 3017 [0xbc9])
+        (nil))
+ -> 83)
+(note 77 76 78 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 79 14 (set (reg:DI 5 di)
+        (reg/f:DI 74 [ D.2855 ])) ./trunk/TRIE_T.c:194 -1
+     (nil))
+(call_insn 79 78 80 14 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x2b18453f5a00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:194 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 80 79 81 14 (set (reg/f:DI 75 [ D.2854 ])
+        (mem/f:DI (reg/f:DI 79 [ D.2856 ]) [3 MEM[(struct NODO *)_33]+0 S8 A64])) ./trunk/TRIE_T.c:195 -1
+     (nil))
+(insn 81 80 82 14 (set (mem/f:DI (plus:DI (reg/f:DI 75 [ D.2854 ])
+                (const_int 520 [0x208])) [2 _25->info+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:195 -1
+     (nil))
+(insn 82 81 83 14 (set (reg/f:DI 80 [ D.2854 ])
+        (mem/f:DI (reg/f:DI 79 [ D.2856 ]) [3 MEM[(struct NODO *)_33]+0 S8 A64])) -1
+     (nil))
+(code_label 83 82 84 15 27 "" [1 uses])
+(note 84 83 85 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 85 84 86 15 (set (reg:DI 5 di)
+        (reg/f:DI 80 [ D.2854 ])) ./trunk/TRIE_T.c:198 -1
+     (nil))
+(call_insn 86 85 87 15 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x2b18453f5a00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:198 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 87 86 88 15 (set (mem/f:DI (reg/f:DI 79 [ D.2856 ]) [3 MEM[(struct NODO *)_33]+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:199 -1
+     (nil))
+(debug_insn 88 87 89 15 (var_location:DI D#1 (debug_expr:DI D#2)) ./trunk/TRIE_T.c:200 -1
+     (nil))
+(debug_insn 89 88 90 15 (var_location:DI nodo (debug_expr:DI D#1)) -1
+     (nil))
+(insn 90 89 91 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:SI (plus:DI (reg/v/f:DI 85 [ pNode ])
+                    (const_int 528 [0x210])) [3 MEM[(struct NODO *)pNode_6(D) + 528B]+0 S4 A32])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:200 -1
+     (nil))
+(jump_insn 91 90 92 15 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/TRIE_T.c:200 -1
+     (expr_list:REG_BR_PROB (const_int 5000 [0x1388])
+        (nil))
+ -> 28)
+(note 92 91 12 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 12 92 105 16 (set (reg:DI 76 [ ivtmp.74 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:200 -1
+     (nil))
+(code_label 105 12 93 17 29 "" [1 uses])
+(note 93 105 94 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 94 93 95 17 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 95 94 96 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f:DI (plus:DI (reg/v/f:DI 85 [ pNode ])
+                    (reg:DI 76 [ ivtmp.74 ])) [3 MEM[base: pNode_6(D), index: ivtmp.74_27, offset: 0B]+0 S8 A64])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:50 -1
+     (nil))
+(jump_insn 96 95 97 17 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/TRIE_T.c:50 -1
+     (expr_list:REG_BR_PROB (const_int 450 [0x1c2])
+        (nil))
+ -> 28)
+(note 97 96 98 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 98 97 99 18 (var_location:SI i (debug_expr:SI D#6)) ./trunk/TRIE_T.c:49 -1
+     (nil))
+(debug_insn 99 98 100 18 (var_location:SI i (debug_expr:SI D#6)) -1
+     (nil))
+(insn 100 99 102 18 (parallel [
+            (set (reg:DI 76 [ ivtmp.74 ])
+                (plus:DI (reg:DI 76 [ ivtmp.74 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 102 100 103 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 76 [ ivtmp.74 ])
+            (const_int 512 [0x200]))) ./trunk/TRIE_T.c:49 -1
+     (nil))
+(jump_insn 103 102 104 18 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) ./trunk/TRIE_T.c:49 -1
+     (expr_list:REG_BR_PROB (const_int 164 [0xa4])
+        (nil))
+ -> 101)
+(note 104 103 106 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 106 104 107 19 (set (pc)
+        (label_ref 105)) ./trunk/TRIE_T.c:49 -1
+     (nil)
+ -> 105)
+(barrier 107 106 108)
+(code_label 108 107 109 20 22 "" [2 uses])
+(note 109 108 110 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 115 20 (set (reg:SI 84 [ <retval> ])
+        (reg:SI 63 [ D.2850 ])) -1
+     (nil))
+(insn 115 110 118 20 (set (reg/i:SI 0 ax)
+        (reg:SI 84 [ <retval> ])) ./trunk/TRIE_T.c:206 -1
+     (nil))
+(insn 118 115 0 20 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:206 -1
+     (nil))
+
+;; Function imprimir_nodos (imprimir_nodos, funcdef_no=60, decl_uid=2471, cgraph_uid=60)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+Purged non-fallthru edges from bb 17
+deleting block 15
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Forwarding edge 4->5 to 6 failed.
+Deleted label in block 5.
+Merging block 17 into block 16...
+Merged blocks 16 and 17.
+Merged 16 and 17 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 4->5 to 6 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 15 0 23 NOTE_INSN_DELETED)
+(note 23 15 16 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 16 23 17 2 (set (reg/v/f:DI 100 [ t ])
+        (reg:DI 5 di [ t ])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/v/f:DI 101 [ buff ])
+        (reg:DI 4 si [ buff ])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/v/f:DI 102 [ intern_buff ])
+        (reg:DI 1 dx [ intern_buff ])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(insn 19 18 20 2 (set (reg/v:SI 103 [ buff_index ])
+        (reg:SI 2 cx [ buff_index ])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/v/f:DI 104 [ info ])
+        (reg:DI 37 r8 [ info ])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(note 21 20 25 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 25 21 26 2 (var_location:DI ap (reg/v/f:DI 100 [ t ])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SI nivel (const_int 0 [0])) ./trunk/TRIE_T.c:282 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 100 [ t ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:284 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:QI 106 [ D.2890 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:284 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 106 [ D.2890 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:284 -1
+     (nil))
+(jump_insn 30 29 122 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 125)
+            (pc))) ./trunk/TRIE_T.c:284 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 125)
+(note 122 30 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 31 122 32 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 101 [ buff ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:284 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:QI 108 [ D.2890 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:284 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 108 [ D.2890 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:284 -1
+     (nil))
+(jump_insn 34 33 123 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) ./trunk/TRIE_T.c:284 -1
+     (expr_list:REG_BR_PROB (const_int 6100 [0x17d4])
+        (nil))
+ -> 40)
+(note 123 34 125 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(code_label 125 123 36 6 51 "" [1 uses])
+(note 36 125 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 6 (set (reg:SI 73 [ D.2888 ])
+        (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])) ./trunk/TRIE_T.c:285 -1
+     (nil))
+(jump_insn 38 37 39 6 (set (pc)
+        (label_ref 111)) ./trunk/TRIE_T.c:285 -1
+     (nil)
+ -> 111)
+(barrier 39 38 40)
+(code_label 40 39 41 7 44 "" [1 uses])
+(note 41 40 42 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 42 41 43 7 (var_location:DI t (reg/v/f:DI 100 [ t ])) -1
+     (nil))
+(debug_insn 43 42 44 7 (var_location:DI buff (reg/v/f:DI 101 [ buff ])) -1
+     (nil))
+(debug_insn 44 43 45 7 (var_location:DI intern_buff (reg/v/f:DI 102 [ intern_buff ])) -1
+     (nil))
+(debug_insn 45 44 46 7 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) -1
+     (nil))
+(debug_insn 46 45 47 7 (var_location:DI info (reg/v/f:DI 104 [ info ])) -1
+     (nil))
+(insn 47 46 48 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:SI (plus:DI (reg/v/f:DI 100 [ t ])
+                    (const_int 528 [0x210])) [4 t_3(D)->control+0 S4 A64])
+            (const_int 1 [0x1]))) ./trunk/TRIE_T.c:287 -1
+     (nil))
+(jump_insn 48 47 49 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) ./trunk/TRIE_T.c:287 -1
+     (expr_list:REG_BR_PROB (const_int 7200 [0x1c20])
+        (nil))
+ -> 64)
+(note 49 48 50 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 8 (set (reg/f:DI 109)
+        (mem/f:DI (plus:DI (reg/v/f:DI 100 [ t ])
+                (const_int 520 [0x208])) [2 t_3(D)->info+0 S8 A64])) ./trunk/TRIE_T.c:291 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 109)
+            (mem/f:DI (reg/v/f:DI 104 [ info ]) [2 *info_13(D)+0 S8 A64]))) ./trunk/TRIE_T.c:291 -1
+     (nil))
+(jump_insn 52 51 53 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) ./trunk/TRIE_T.c:291 -1
+     (expr_list:REG_BR_PROB (const_int 9328 [0x2470])
+        (nil))
+ -> 64)
+(note 53 52 54 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 54 53 55 9 (set (reg:SI 81 [ keys.3 ])
+        (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])) ./trunk/TRIE_T.c:292 -1
+     (nil))
+(debug_insn 55 54 56 9 (var_location:DI __dest (mem/f:DI (plus:DI (ashift:DI (sign_extend:DI (reg:SI 81 [ keys.3 ]))
+                (const_int 3 [0x3]))
+            (reg/v/f:DI 101 [ buff ])) [0 *_23+0 S8 A64])) ./trunk/TRIE_T.c:292 -1
+     (nil))
+(debug_insn 56 55 57 9 (var_location:DI __src (reg/v/f:DI 102 [ intern_buff ])) ./trunk/TRIE_T.c:292 -1
+     (nil))
+(insn 57 56 58 9 (set (reg:DI 110 [ D.2892 ])
+        (sign_extend:DI (reg:SI 81 [ keys.3 ]))) ./trunk/TRIE_T.c:292 -1
+     (nil))
+(insn 58 57 59 9 (set (reg:DI 111)
+        (mem/f:DI (plus:DI (mult:DI (reg:DI 110 [ D.2892 ])
+                    (const_int 8 [0x8]))
+                (reg/v/f:DI 101 [ buff ])) [2 *_23+0 S8 A64])) /usr/include/x86_64-linux-gnu/bits/string3.h:104 -1
+     (nil))
+(insn 59 58 60 9 (set (reg:DI 4 si)
+        (reg/v/f:DI 102 [ intern_buff ])) /usr/include/x86_64-linux-gnu/bits/string3.h:104 -1
+     (nil))
+(insn 60 59 61 9 (set (reg:DI 5 di)
+        (reg:DI 111)) /usr/include/x86_64-linux-gnu/bits/string3.h:104 -1
+     (nil))
+(call_insn 61 60 62 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcpy") [flags 0x41]  <function_decl 0x2b18453dc800 __builtin_strcpy>) [0 __builtin_strcpy S1 A8])
+            (const_int 0 [0]))) /usr/include/x86_64-linux-gnu/bits/string3.h:104 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+                (nil)))))
+(insn 62 61 63 9 (parallel [
+            (set (reg:SI 112)
+                (plus:SI (reg:SI 81 [ keys.3 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:294 -1
+     (nil))
+(insn 63 62 64 9 (set (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])
+        (reg:SI 112)) ./trunk/TRIE_T.c:294 -1
+     (expr_list:REG_EQUAL (plus:SI (reg:SI 81 [ keys.3 ])
+            (const_int 1 [0x1]))
+        (nil)))
+(code_label 64 63 65 10 47 "" [2 uses])
+(note 65 64 66 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 66 65 67 10 (var_location:SI nivel (const_int 0 [0])) -1
+     (nil))
+(debug_insn 67 66 68 10 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) -1
+     (nil))
+(insn 68 67 22 10 (set (reg:DI 97 [ ivtmp.84 ])
+        (reg/v/f:DI 100 [ t ])) -1
+     (nil))
+(insn 22 68 105 10 (set (reg:QI 96 [ ivtmp.87 ])
+        (const_int 48 [0x30])) ./trunk/TRIE_T.c:281 -1
+     (nil))
+(code_label 105 22 69 11 50 "" [1 uses])
+(note 69 105 70 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 70 69 71 11 (var_location:SI nivel (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 71 70 72 11 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) -1
+     (nil))
+(insn 72 71 73 11 (set (reg/f:DI 98 [ D.2891 ])
+        (reg:DI 97 [ ivtmp.84 ])) -1
+     (nil))
+(insn 73 72 74 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f:DI (reg/f:DI 98 [ D.2891 ]) [3 MEM[base: _56, offset: 0B]+0 S8 A64])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:304 -1
+     (nil))
+(jump_insn 74 73 75 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 94)
+            (pc))) ./trunk/TRIE_T.c:304 -1
+     (expr_list:REG_BR_PROB (const_int 3017 [0xbc9])
+        (nil))
+ -> 94)
+(note 75 74 76 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 76 75 77 12 (var_location:QI a (reg:QI 96 [ ivtmp.87 ])) -1
+     (nil))
+(debug_insn 77 76 78 12 (var_location:DI buff (reg/v/f:DI 102 [ intern_buff ])) -1
+     (nil))
+(debug_insn 78 77 79 12 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) -1
+     (nil))
+(insn 79 78 80 12 (set (reg:DI 89 [ D.2897 ])
+        (sign_extend:DI (reg/v:SI 103 [ buff_index ]))) ./trunk/TRIE_T.c:57 -1
+     (nil))
+(insn 80 79 81 12 (set (mem:QI (plus:DI (reg/v/f:DI 102 [ intern_buff ])
+                (reg:DI 89 [ D.2897 ])) [0 *_33+0 S1 A8])
+        (reg:QI 96 [ ivtmp.87 ])) ./trunk/TRIE_T.c:57 -1
+     (nil))
+(insn 81 80 82 12 (set (mem:QI (plus:DI (plus:DI (reg/v/f:DI 102 [ intern_buff ])
+                    (reg:DI 89 [ D.2897 ]))
+                (const_int 1 [0x1])) [0 *_35+0 S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:58 -1
+     (nil))
+(debug_insn 82 81 83 12 (var_location:SI buff_index (plus:SI (reg/v:SI 103 [ buff_index ])
+        (const_int 1 [0x1]))) ./trunk/TRIE_T.c:59 -1
+     (nil))
+(debug_insn 83 82 84 12 (var_location:SI buff_index (clobber (const_int 0 [0]))) ./trunk/TRIE_T.c:305 -1
+     (nil))
+(insn 84 83 85 12 (parallel [
+            (set (reg:SI 113 [ buff_index ])
+                (plus:SI (reg/v:SI 103 [ buff_index ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:59 -1
+     (nil))
+(insn 85 84 86 12 (set (reg:DI 37 r8)
+        (reg/v/f:DI 104 [ info ])) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(insn 86 85 87 12 (set (reg:SI 2 cx)
+        (reg:SI 113 [ buff_index ])) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(insn 87 86 88 12 (set (reg:DI 1 dx)
+        (reg/v/f:DI 102 [ intern_buff ])) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(insn 88 87 89 12 (set (reg:DI 4 si)
+        (reg/v/f:DI 101 [ buff ])) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(insn 89 88 90 12 (set (reg:DI 5 di)
+        (mem/f:DI (reg/f:DI 98 [ D.2891 ]) [3 MEM[base: _56, offset: 0B]+0 S8 A64])) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(call_insn 90 89 91 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("imprimir_nodos") [flags 0x3]  <function_decl 0x2b1845569200 imprimir_nodos>) [0 imprimir_nodos S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:306 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 37 r8))
+                        (nil)))))))
+(insn 91 90 92 12 (set (reg:SI 95 [ keys.5 ])
+        (reg:SI 0 ax)) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(insn 92 91 93 12 (set (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])
+        (reg:SI 95 [ keys.5 ])) ./trunk/TRIE_T.c:306 -1
+     (nil))
+(debug_insn 93 92 94 12 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) ./trunk/TRIE_T.c:307 -1
+     (nil))
+(code_label 94 93 95 13 48 "" [1 uses])
+(note 95 94 96 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 96 95 97 13 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) -1
+     (nil))
+(debug_insn 97 96 98 13 (var_location:SI nivel (debug_expr:SI D#8)) ./trunk/TRIE_T.c:303 -1
+     (nil))
+(debug_insn 98 97 99 13 (var_location:SI nivel (debug_expr:SI D#8)) -1
+     (nil))
+(debug_insn 99 98 100 13 (var_location:SI buff_index (reg/v:SI 103 [ buff_index ])) -1
+     (nil))
+(insn 100 99 101 13 (parallel [
+            (set (reg:DI 97 [ ivtmp.84 ])
+                (plus:DI (reg:DI 97 [ ivtmp.84 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 101 100 102 13 (parallel [
+            (set (reg:QI 96 [ ivtmp.87 ])
+                (plus:QI (reg:QI 96 [ ivtmp.87 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 102 101 103 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 96 [ ivtmp.87 ])
+            (const_int 112 [0x70]))) ./trunk/TRIE_T.c:303 -1
+     (nil))
+(jump_insn 103 102 104 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) ./trunk/TRIE_T.c:303 -1
+     (expr_list:REG_BR_PROB (const_int 156 [0x9c])
+        (nil))
+ -> 108)
+(note 104 103 106 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 106 104 107 14 (set (pc)
+        (label_ref 105)) ./trunk/TRIE_T.c:303 -1
+     (nil)
+ -> 105)
+(barrier 107 106 108)
+(code_label 108 107 109 15 49 "" [1 uses])
+(note 109 108 110 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 111 15 (set (reg:SI 73 [ D.2888 ])
+        (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])) ./trunk/TRIE_T.c:311 -1
+     (nil))
+(code_label 111 110 112 16 46 "" [1 uses])
+(note 112 111 113 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 113 112 117 16 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 73 [ D.2888 ])) -1
+     (nil))
+(insn 117 113 120 16 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) ./trunk/TRIE_T.c:312 -1
+     (nil))
+(insn 120 117 0 16 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:312 -1
+     (nil))
+
+;; Function init (init, funcdef_no=43, decl_uid=2264, cgraph_uid=43)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+deleting block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 15 0 18 NOTE_INSN_DELETED)
+(note 18 15 16 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 16 18 20 2 NOTE_INSN_FUNCTION_BEG)
+(insn 20 16 21 2 (set (reg:DI 5 di)
+        (const_int 120 [0x78])) ./trunk/TRIE_T.c:64 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x2b18453fd000 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:64 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 22 21 23 2 (set (reg/f:DI 77)
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:64 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 77)
+        (nil)))
+(insn 23 22 24 2 (set (reg/v/f:DI 74 [ root ])
+        (reg/f:DI 77)) ./trunk/TRIE_T.c:64 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:DI raiz (reg/v/f:DI 74 [ root ])) ./trunk/TRIE_T.c:64 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:DI root (const_int 0 [0])) ./trunk/TRIE_T.c:65 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:66 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:67 -1
+     (nil))
+(call_insn 28 27 29 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("novoNodo") [flags 0x3]  <function_decl 0x2b184554ce00 novoNodo>) [0 novoNodo S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:67 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_DEP_TRUE (use (reg:QI 0 ax))
+        (nil)))
+(insn 29 28 30 2 (set (reg/f:DI 75 [ D.2912 ])
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:67 -1
+     (nil))
+(insn 30 29 31 2 (set (mem/f:DI (plus:DI (reg/v/f:DI 74 [ root ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)root_5].raiz+0 S8 A64])
+        (reg/f:DI 75 [ D.2912 ])) ./trunk/TRIE_T.c:67 -1
+     (nil))
+(debug_insn 31 30 32 2 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:69 -1
+     (nil))
+(debug_insn 32 31 17 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(insn 17 32 43 2 (set (reg:DI 73 [ ivtmp.98 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:67 -1
+     (nil))
+(code_label 43 17 33 4 57 "" [1 uses])
+(note 33 43 34 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 34 33 35 4 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 35 34 36 4 (set (mem:SI (plus:DI (reg/v/f:DI 74 [ root ])
+                (reg:DI 73 [ ivtmp.98 ])) [5 MEM[base: root_5, index: ivtmp.98_13, offset: 0B]+0 S4 A32])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:70 -1
+     (nil))
+(debug_insn 36 35 37 4 (var_location:SI i (debug_expr:SI D#10)) ./trunk/TRIE_T.c:69 -1
+     (nil))
+(debug_insn 37 36 38 4 (var_location:SI i (debug_expr:SI D#10)) -1
+     (nil))
+(insn 38 37 39 4 (parallel [
+            (set (reg:DI 73 [ ivtmp.98 ])
+                (plus:DI (reg:DI 73 [ ivtmp.98 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 39 38 40 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 73 [ ivtmp.98 ])
+            (const_int 104 [0x68]))) ./trunk/TRIE_T.c:69 -1
+     (nil))
+(jump_insn 40 39 41 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) ./trunk/TRIE_T.c:69 -1
+     (expr_list:REG_BR_PROB (const_int 384 [0x180])
+        (nil))
+ -> 46)
+(note 41 40 42 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 42 41 44 5 (var_location:SI i (debug_expr:SI D#10)) -1
+     (nil))
+(jump_insn 44 42 45 5 (set (pc)
+        (label_ref 43)) -1
+     (nil)
+ -> 43)
+(barrier 45 44 46)
+(code_label 46 45 47 6 56 "" [1 uses])
+(note 47 46 48 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 6 (set (mem:SI (plus:DI (reg/v/f:DI 74 [ root ])
+                (const_int 112 [0x70])) [4 MEM[(struct TRIE_T *)root_5].total_keys+0 S4 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:72 -1
+     (nil))
+(debug_insn 49 48 50 6 (var_location:DI root (reg/v/f:DI 74 [ root ])) ./trunk/TRIE_T.c:73 -1
+     (nil))
+(insn 50 49 54 6 (set (reg:DI 76 [ <retval> ])
+        (reg/v/f:DI 74 [ root ])) ./trunk/TRIE_T.c:74 -1
+     (nil))
+(insn 54 50 57 6 (set (reg/i:DI 0 ax)
+        (reg:DI 76 [ <retval> ])) ./trunk/TRIE_T.c:75 -1
+     (nil))
+(insn 57 54 0 6 (use (reg/i:DI 0 ax)) ./trunk/TRIE_T.c:75 -1
+     (nil))
+
+;; Function insert_t (insert_t, funcdef_no=44, decl_uid=2268, cgraph_uid=44)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+Edge 4->6 redirected to 13
+deleting block 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 14 0 22 NOTE_INSN_DELETED)
+(note 22 14 15 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 15 22 16 2 (set (reg/v/f:DI 97 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:79 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/v/f:DI 98 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/TRIE_T.c:79 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/v/f:DI 99 [ info ])
+        (reg:DI 1 dx [ info ])) ./trunk/TRIE_T.c:79 -1
+     (nil))
+(note 18 17 24 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 24 18 25 2 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:80 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:DI raiz (reg/v/f:DI 97 [ trie ])) ./trunk/TRIE_T.c:81 -1
+     (nil))
+(insn 26 25 27 2 (set (reg/v/f:DI 92 [ ap ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 97 [ trie ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)trie_6(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:82 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:DI ap (reg/v/f:DI 92 [ ap ])) ./trunk/TRIE_T.c:82 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 98 [ key ])) ./trunk/TRIE_T.c:83 -1
+     (nil))
+(call_insn/i 29 28 30 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x2b18453dcf00 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:83 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 30 29 31 2 (set (reg:DI 101)
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:83 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:DI 102)
+        (reg:DI 101)) ./trunk/TRIE_T.c:83 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 74 [ D.2921 ])
+        (reg:DI 102)) ./trunk/TRIE_T.c:83 -1
+     (nil))
+(insn 33 32 34 2 (set (reg/v:SI 75 [ tam ])
+        (subreg:SI (reg:DI 74 [ D.2921 ]) 0)) ./trunk/TRIE_T.c:83 -1
+     (nil))
+(debug_insn 34 33 35 2 (var_location:SI tam (reg/v:SI 75 [ tam ])) ./trunk/TRIE_T.c:83 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 103 [ D.2923 ])
+        (sign_extend:SI (mem:QI (reg/v/f:DI 98 [ key ]) [0 *key_9(D)+0 S1 A8]))) ./trunk/TRIE_T.c:84 -1
+     (nil))
+(insn 36 35 37 2 (parallel [
+            (set (reg:SI 104 [ D.2923 ])
+                (plus:SI (reg:SI 103 [ D.2923 ])
+                    (const_int -65 [0xffffffffffffffbf])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:84 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:DI 105 [ D.2920 ])
+        (sign_extend:DI (reg:SI 104 [ D.2923 ]))) -1
+     (nil))
+(insn 38 37 39 2 (parallel [
+            (set (reg:DI 106 [ D.2920 ])
+                (ashift:DI (reg:DI 105 [ D.2920 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 39 38 40 2 (parallel [
+            (set (reg/f:DI 94 [ D.2925 ])
+                (plus:DI (reg/v/f:DI 97 [ trie ])
+                    (reg:DI 106 [ D.2920 ])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 40 39 41 2 (parallel [
+            (set (mem:SI (reg/f:DI 94 [ D.2925 ]) [5 MEM[(struct TRIE_T *)_41]+0 S4 A32])
+                (plus:SI (mem:SI (reg/f:DI 94 [ D.2925 ]) [5 MEM[(struct TRIE_T *)_41]+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:84 -1
+     (nil))
+(debug_insn 41 40 42 2 (var_location:SI nivel (const_int 0 [0])) ./trunk/TRIE_T.c:86 -1
+     (nil))
+(debug_insn 42 41 43 2 (var_location:DI ap (reg/v/f:DI 92 [ ap ])) -1
+     (nil))
+(debug_insn 43 42 44 2 (var_location:SI nivel (const_int 0 [0])) -1
+     (nil))
+(insn 44 43 45 2 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg/v:SI 75 [ tam ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:86 -1
+     (nil))
+(jump_insn 45 44 46 2 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) ./trunk/TRIE_T.c:86 -1
+     (expr_list:REG_BR_PROB (const_int 900 [0x384])
+        (nil))
+ -> 78)
+(note 46 45 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 46 75 4 (set (reg:DI 87 [ ivtmp.103 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:86 -1
+     (nil))
+(code_label 75 19 47 5 62 "" [1 uses])
+(note 47 75 48 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 5 (var_location:DI ap (reg/v/f:DI 92 [ ap ])) -1
+     (nil))
+(debug_insn 49 48 50 5 (var_location:SI nivel (subreg:SI (reg:DI 87 [ ivtmp.103 ]) 0)) -1
+     (nil))
+(debug_insn 50 49 51 5 (var_location:SI i (plus:SI (sign_extend:SI (mem:QI (plus:DI (reg/v/f:DI 98 [ key ])
+                    (reg:DI 87 [ ivtmp.103 ])) [0 MEM[base: key_9(D), index: ivtmp.103_27, offset: 0B]+0 S1 A8]))
+        (const_int -48 [0xffffffffffffffd0]))) ./trunk/TRIE_T.c:87 -1
+     (nil))
+(insn 51 50 52 5 (set (reg:SI 107 [ D.2923 ])
+        (sign_extend:SI (mem:QI (plus:DI (reg/v/f:DI 98 [ key ])
+                    (reg:DI 87 [ ivtmp.103 ])) [0 MEM[base: key_9(D), index: ivtmp.103_27, offset: 0B]+0 S1 A8]))) ./trunk/TRIE_T.c:87 -1
+     (nil))
+(insn 52 51 53 5 (parallel [
+            (set (reg:SI 108 [ i ])
+                (plus:SI (reg:SI 107 [ D.2923 ])
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:87 -1
+     (nil))
+(insn 53 52 54 5 (set (reg:DI 109 [ D.2920 ])
+        (sign_extend:DI (reg:SI 108 [ i ]))) -1
+     (nil))
+(insn 54 53 55 5 (parallel [
+            (set (reg:DI 110 [ D.2920 ])
+                (ashift:DI (reg:DI 109 [ D.2920 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 55 54 56 5 (parallel [
+            (set (reg/f:DI 72 [ D.2919 ])
+                (plus:DI (reg/v/f:DI 92 [ ap ])
+                    (reg:DI 110 [ D.2920 ])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 56 55 57 5 (set (reg/f:DI 85 [ D.2924 ])
+        (mem/f:DI (reg/f:DI 72 [ D.2919 ]) [3 MEM[(struct NODO *)_2]+0 S8 A64])) ./trunk/TRIE_T.c:89 -1
+     (nil))
+(insn 57 56 58 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 85 [ D.2924 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:89 -1
+     (nil))
+(jump_insn 58 57 59 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 100)
+            (pc))) ./trunk/TRIE_T.c:89 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 9328 [0x2470])
+        (nil))
+ -> 100)
+(note 59 58 60 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:90 -1
+     (nil))
+(call_insn 61 60 62 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("novoNodo") [flags 0x3]  <function_decl 0x2b184554ce00 novoNodo>) [0 novoNodo S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:90 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_DEP_TRUE (use (reg:QI 0 ax))
+        (nil)))
+(insn 62 61 63 6 (set (reg/f:DI 86 [ D.2919 ])
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:90 -1
+     (nil))
+(insn 63 62 21 6 (set (mem/f:DI (reg/f:DI 72 [ D.2919 ]) [3 MEM[(struct NODO *)_2]+0 S8 A64])
+        (reg/f:DI 86 [ D.2919 ])) ./trunk/TRIE_T.c:90 -1
+     (nil))
+(insn 21 63 97 6 (set (reg/v/f:DI 92 [ ap ])
+        (reg/f:DI 86 [ D.2919 ])) ./trunk/TRIE_T.c:90 -1
+     (nil))
+(jump_insn 97 21 98 6 (set (pc)
+        (label_ref 64)) -1
+     (nil)
+ -> 64)
+(barrier 98 97 100)
+(code_label 100 98 99 7 64 "" [1 uses])
+(note 99 100 20 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 20 99 64 7 (set (reg/v/f:DI 92 [ ap ])
+        (reg/f:DI 85 [ D.2924 ])) -1
+     (nil))
+(code_label 64 20 65 8 61 "" [1 uses])
+(note 65 64 66 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 66 65 67 8 (var_location:DI ap (reg/v/f:DI 92 [ ap ])) ./trunk/TRIE_T.c:93 -1
+     (nil))
+(debug_insn 67 66 68 8 (var_location:SI D#11 (plus:SI (subreg:SI (reg:DI 87 [ ivtmp.103 ]) 0)
+        (const_int 1 [0x1]))) -1
+     (nil))
+(debug_insn 68 67 69 8 (var_location:SI nivel (debug_expr:SI D#11)) ./trunk/TRIE_T.c:86 -1
+     (nil))
+(debug_insn 69 68 70 8 (var_location:DI ap (reg/v/f:DI 92 [ ap ])) -1
+     (nil))
+(debug_insn 70 69 71 8 (var_location:SI nivel (debug_expr:SI D#11)) -1
+     (nil))
+(insn 71 70 72 8 (parallel [
+            (set (reg:DI 87 [ ivtmp.103 ])
+                (plus:DI (reg:DI 87 [ ivtmp.103 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 72 71 73 8 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg/v:SI 75 [ tam ])
+            (subreg:SI (reg:DI 87 [ ivtmp.103 ]) 0))) ./trunk/TRIE_T.c:86 -1
+     (nil))
+(jump_insn 73 72 74 8 (set (pc)
+        (if_then_else (le (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) ./trunk/TRIE_T.c:86 -1
+     (expr_list:REG_BR_PROB (const_int 900 [0x384])
+        (nil))
+ -> 78)
+(note 74 73 76 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 76 74 77 9 (set (pc)
+        (label_ref 75)) -1
+     (nil)
+ -> 75)
+(barrier 77 76 78)
+(code_label 78 77 79 10 60 "" [2 uses])
+(note 79 78 80 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 81 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:SI (plus:DI (reg/v/f:DI 92 [ ap ])
+                    (const_int 528 [0x210])) [4 ap_36->control+0 S4 A64])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:96 -1
+     (nil))
+(jump_insn 81 80 82 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 84)
+            (pc))) ./trunk/TRIE_T.c:96 -1
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 84)
+(note 82 81 83 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 11 (parallel [
+            (set (mem:SI (plus:DI (reg/v/f:DI 97 [ trie ])
+                        (const_int 112 [0x70])) [4 MEM[(struct TRIE_T *)trie_6(D)].total_keys+0 S4 A64])
+                (plus:SI (mem:SI (plus:DI (reg/v/f:DI 97 [ trie ])
+                            (const_int 112 [0x70])) [4 MEM[(struct TRIE_T *)trie_6(D)].total_keys+0 S4 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:97 -1
+     (nil))
+(code_label 84 83 85 12 63 "" [1 uses])
+(note 85 84 86 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 87 12 (set (mem:SI (plus:DI (reg/v/f:DI 92 [ ap ])
+                (const_int 528 [0x210])) [4 ap_36->control+0 S4 A64])
+        (const_int 1 [0x1])) ./trunk/TRIE_T.c:99 -1
+     (nil))
+(insn 87 86 88 12 (set (mem/f:DI (plus:DI (reg/v/f:DI 92 [ ap ])
+                (const_int 520 [0x208])) [2 ap_36->info+0 S8 A64])
+        (reg/v/f:DI 99 [ info ])) ./trunk/TRIE_T.c:100 -1
+     (nil))
+(insn 88 87 92 12 (set (reg:DI 96 [ <retval> ])
+        (reg/v/f:DI 97 [ trie ])) ./trunk/TRIE_T.c:101 -1
+     (nil))
+(insn 92 88 95 12 (set (reg/i:DI 0 ax)
+        (reg:DI 96 [ <retval> ])) ./trunk/TRIE_T.c:102 -1
+     (nil))
+(insn 95 92 0 12 (use (reg/i:DI 0 ax)) ./trunk/TRIE_T.c:102 -1
+     (nil))
+
+;; Function search_t (search_t, funcdef_no=45, decl_uid=2275, cgraph_uid=45)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+Edge 2->12 redirected to 15
+Edge 4->12 redirected to 16
+Edge 6->12 redirected to 17
+Edge 9->12 redirected to 18
+deleting block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 7 0 19 NOTE_INSN_DELETED)
+(note 19 7 8 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 8 19 9 2 (set (reg/v/f:DI 81 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:105 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/v/f:DI 82 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/TRIE_T.c:105 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/v/f:DI 83 [ aux ])
+        (reg:DI 1 dx [ aux ])) ./trunk/TRIE_T.c:105 -1
+     (nil))
+(note 11 10 21 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 21 11 22 2 (var_location:DI raiz (reg/v/f:DI 81 [ trie ])) ./trunk/TRIE_T.c:105 -1
+     (nil))
+(insn 22 21 23 2 (set (reg/v/f:DI 73 [ ap ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 81 [ trie ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)trie_7(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:106 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:DI ap (reg/v/f:DI 73 [ ap ])) ./trunk/TRIE_T.c:106 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 73 [ ap ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:109 -1
+     (nil))
+(jump_insn 25 24 26 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 99)
+            (pc))) ./trunk/TRIE_T.c:109 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 1014 [0x3f6])
+        (nil))
+ -> 99)
+(note 26 25 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 4 (set (reg:DI 5 di)
+        (reg/v/f:DI 82 [ key ])) ./trunk/TRIE_T.c:113 -1
+     (nil))
+(call_insn/i 28 27 29 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x2b18453dcf00 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:113 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 29 28 30 4 (set (reg:DI 85)
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:113 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:DI 86)
+        (reg:DI 85)) ./trunk/TRIE_T.c:113 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 68 [ D.2935 ])
+        (reg:DI 86)) ./trunk/TRIE_T.c:113 -1
+     (nil))
+(debug_insn 32 31 33 4 (var_location:SI tam (subreg:SI (reg:DI 68 [ D.2935 ]) 0)) ./trunk/TRIE_T.c:113 -1
+     (nil))
+(debug_insn 33 32 34 4 (var_location:SI nivel (const_int 0 [0])) ./trunk/TRIE_T.c:115 -1
+     (nil))
+(debug_insn 34 33 35 4 (var_location:SI nivel (const_int 0 [0])) -1
+     (nil))
+(debug_insn 35 34 36 4 (var_location:DI ap (reg/v/f:DI 73 [ ap ])) -1
+     (nil))
+(insn 36 35 37 4 (set (reg:CCNO 17 flags)
+        (compare:CCNO (subreg:SI (reg:DI 68 [ D.2935 ]) 0)
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:115 -1
+     (nil))
+(jump_insn 37 36 38 4 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) ./trunk/TRIE_T.c:115 -1
+     (expr_list:REG_BR_PROB (const_int 450 [0x1c2])
+        (nil))
+ -> 77)
+(note 38 37 39 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 39 38 40 5 (var_location:SI i (plus:SI (sign_extend:SI (mem:QI (reg/v/f:DI 82 [ key ]) [0 *key_10(D)+0 S1 A8]))
+        (const_int -48 [0xffffffffffffffd0]))) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(debug_insn 40 39 41 5 (var_location:SI D#13 (plus:SI (sign_extend:SI (mem:QI (reg/v/f:DI 82 [ key ]) [0 *key_10(D)+0 S1 A8]))
+        (const_int -48 [0xffffffffffffffd0]))) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:SI 87 [ D.2933 ])
+        (sign_extend:SI (mem:QI (reg/v/f:DI 82 [ key ]) [0 *key_10(D)+0 S1 A8]))) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(insn 42 41 43 5 (parallel [
+            (set (reg:SI 88 [ i ])
+                (plus:SI (reg:SI 87 [ D.2933 ])
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(insn 43 42 44 5 (set (reg:DI 89)
+        (sign_extend:DI (reg:SI 88 [ i ]))) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(insn 44 43 45 5 (set (reg/v/f:DI 73 [ ap ])
+        (mem/f:DI (plus:DI (mult:DI (reg:DI 89)
+                    (const_int 8 [0x8]))
+                (reg/v/f:DI 73 [ ap ])) [2 ap_9->nodo S8 A64])) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 73 [ ap ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(jump_insn 46 45 47 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 103)
+            (pc))) ./trunk/TRIE_T.c:118 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 450 [0x1c2])
+        (nil))
+ -> 103)
+(note 47 46 48 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 6 (parallel [
+            (set (reg:SI 90 [ D.2934 ])
+                (plus:SI (subreg:SI (reg:DI 68 [ D.2935 ]) 0)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 49 48 12 6 (set (reg:DI 75 [ D.2937 ])
+        (zero_extend:DI (reg:SI 90 [ D.2934 ]))) -1
+     (nil))
+(insn 12 49 50 6 (set (reg:DI 74 [ ivtmp.109 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(jump_insn 50 12 51 6 (set (pc)
+        (label_ref 62)) -1
+     (nil)
+ -> 62)
+(barrier 51 50 71)
+(code_label 71 51 52 7 71 "" [1 uses])
+(note 52 71 89 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 89 52 53 7 (var_location:DI D#14 (plus:DI (reg/v/f:DI 82 [ key ])
+        (reg:DI 74 [ ivtmp.109 ]))) -1
+     (nil))
+(debug_insn 53 89 54 7 (var_location:SI i (plus:SI (sign_extend:SI (mem:QI (plus:DI (debug_expr:DI D#14)
+                    (const_int 1 [0x1])) [0 MEM[base: key_10(D), index: ivtmp.109_23, offset: 1B]+0 S1 A8]))
+        (const_int -48 [0xffffffffffffffd0]))) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:SI 91 [ D.2933 ])
+        (sign_extend:SI (mem:QI (plus:DI (plus:DI (reg/v/f:DI 82 [ key ])
+                        (reg:DI 74 [ ivtmp.109 ]))
+                    (const_int 1 [0x1])) [0 MEM[base: key_10(D), index: ivtmp.109_23, offset: 1B]+0 S1 A8]))) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(insn 55 54 56 7 (parallel [
+            (set (reg:SI 92 [ i ])
+                (plus:SI (reg:SI 91 [ D.2933 ])
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:DI 93)
+        (sign_extend:DI (reg:SI 92 [ i ]))) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(insn 57 56 58 7 (set (reg/v/f:DI 73 [ ap ])
+        (mem/f:DI (plus:DI (mult:DI (reg:DI 93)
+                    (const_int 8 [0x8]))
+                (reg/v/f:DI 73 [ ap ])) [2 ap_34->nodo S8 A64])) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(insn 58 57 59 7 (parallel [
+            (set (reg:DI 74 [ ivtmp.109 ])
+                (plus:DI (reg:DI 74 [ ivtmp.109 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 59 58 60 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 73 [ ap ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:118 -1
+     (nil))
+(jump_insn 60 59 61 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 107)
+            (pc))) ./trunk/TRIE_T.c:118 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 450 [0x1c2])
+        (nil))
+ -> 107)
+(note 61 60 62 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(code_label 62 61 63 9 70 "" [1 uses])
+(note 63 62 64 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 64 63 65 9 (var_location:SI nivel (subreg:SI (reg:DI 74 [ ivtmp.109 ]) 0)) -1
+     (nil))
+(debug_insn 65 64 66 9 (var_location:SI i (debug_expr:SI D#13)) ./trunk/TRIE_T.c:116 -1
+     (nil))
+(debug_insn 66 65 67 9 (var_location:DI ap (reg/v/f:DI 73 [ ap ])) ./trunk/TRIE_T.c:123 -1
+     (nil))
+(debug_insn 67 66 68 9 (var_location:SI D#12 (plus:SI (subreg:SI (reg:DI 74 [ ivtmp.109 ]) 0)
+        (const_int 1 [0x1]))) -1
+     (nil))
+(debug_insn 68 67 69 9 (var_location:SI nivel (debug_expr:SI D#12)) ./trunk/TRIE_T.c:115 -1
+     (nil))
+(debug_insn 69 68 70 9 (var_location:SI nivel (debug_expr:SI D#12)) -1
+     (nil))
+(debug_insn 70 69 72 9 (var_location:DI ap (reg/v/f:DI 73 [ ap ])) -1
+     (nil))
+(insn 72 70 73 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 74 [ ivtmp.109 ])
+            (reg:DI 75 [ D.2937 ]))) ./trunk/TRIE_T.c:115 -1
+     (nil))
+(jump_insn 73 72 74 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) ./trunk/TRIE_T.c:115 -1
+     (expr_list:REG_BR_PROB (const_int 9550 [0x254e])
+        (nil))
+ -> 71)
+(note 74 73 13 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 13 74 75 10 (set (reg/v/f:DI 76 [ ap ])
+        (reg/v/f:DI 73 [ ap ])) -1
+     (nil))
+(insn 75 13 76 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 76 [ ap ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:126 -1
+     (nil))
+(jump_insn 76 75 77 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 111)
+            (pc))) ./trunk/TRIE_T.c:126 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 1646 [0x66e])
+        (nil))
+ -> 111)
+(code_label 77 76 78 11 69 "" [1 uses])
+(note 78 77 79 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 11 (set (reg:SI 65 [ D.2933 ])
+        (mem:SI (plus:DI (reg/v/f:DI 73 [ ap ])
+                (const_int 528 [0x210])) [4 ap_26->control+0 S4 A64])) ./trunk/TRIE_T.c:126 -1
+     (nil))
+(insn 80 79 81 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 65 [ D.2933 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:126 -1
+     (nil))
+(jump_insn 81 80 82 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 84)
+            (pc))) ./trunk/TRIE_T.c:126 -1
+     (expr_list:REG_BR_PROB (const_int 5000 [0x1388])
+        (nil))
+ -> 84)
+(note 82 81 83 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 15 12 (set (mem/f:DI (reg/v/f:DI 83 [ aux ]) [2 *aux_21(D)+0 S8 A64])
+        (reg/v/f:DI 73 [ ap ])) ./trunk/TRIE_T.c:127 -1
+     (nil))
+(insn 15 83 96 12 (set (reg:SI 65 [ D.2933 ])
+        (const_int 1 [0x1])) ./trunk/TRIE_T.c:129 -1
+     (nil))
+(jump_insn 96 15 97 12 (set (pc)
+        (label_ref 84)) -1
+     (nil)
+ -> 84)
+(barrier 97 96 99)
+(code_label 99 97 98 13 72 "" [1 uses])
+(note 98 99 16 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 16 98 100 13 (set (reg:SI 65 [ D.2933 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:110 -1
+     (nil))
+(jump_insn 100 16 101 13 (set (pc)
+        (label_ref 84)) -1
+     (nil)
+ -> 84)
+(barrier 101 100 103)
+(code_label 103 101 102 14 73 "" [1 uses])
+(note 102 103 14 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 14 102 104 14 (set (reg:SI 65 [ D.2933 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:110 -1
+     (nil))
+(jump_insn 104 14 105 14 (set (pc)
+        (label_ref 84)) -1
+     (nil)
+ -> 84)
+(barrier 105 104 107)
+(code_label 107 105 106 15 74 "" [1 uses])
+(note 106 107 17 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 17 106 108 15 (set (reg:SI 65 [ D.2933 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:110 -1
+     (nil))
+(jump_insn 108 17 109 15 (set (pc)
+        (label_ref 84)) -1
+     (nil)
+ -> 84)
+(barrier 109 108 111)
+(code_label 111 109 110 16 75 "" [1 uses])
+(note 110 111 18 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 18 110 84 16 (set (reg:SI 65 [ D.2933 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:129 -1
+     (nil))
+(code_label 84 18 85 17 68 "" [5 uses])
+(note 85 84 86 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 91 17 (set (reg:SI 80 [ <retval> ])
+        (reg:SI 65 [ D.2933 ])) -1
+     (nil))
+(insn 91 86 94 17 (set (reg/i:SI 0 ax)
+        (reg:SI 80 [ <retval> ])) ./trunk/TRIE_T.c:130 -1
+     (nil))
+(insn 94 91 0 17 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:130 -1
+     (nil))
+
+;; Function getFirtstCharKeyNode (getFirtstCharKeyNode, funcdef_no=47, decl_uid=2278, cgraph_uid=47)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 4 2 (set (reg:SI 65)
+        (reg:SI 5 di [ a ])) ./trunk/TRIE_T.c:139 -1
+     (nil))
+(insn 4 2 3 2 (set (reg/v/f:DI 66 [ t ])
+        (reg:DI 4 si [ t ])) ./trunk/TRIE_T.c:139 -1
+     (nil))
+(insn 3 4 5 2 (set (reg/v:QI 64 [ a ])
+        (subreg:QI (reg:SI 65) 0)) ./trunk/TRIE_T.c:139 -1
+     (nil))
+(note 5 3 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (var_location:DI raiz (reg/v/f:DI 66 [ t ])) ./trunk/TRIE_T.c:139 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 68)
+        (mem/f:DI (plus:DI (reg/v/f:DI 66 [ t ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)t_1(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:140 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 69 [ D.2941 ])
+        (sign_extend:SI (reg/v:QI 64 [ a ]))) ./trunk/TRIE_T.c:140 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 70 [ D.2941 ])
+                (plus:SI (reg:SI 69 [ D.2941 ])
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:140 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 71)
+        (sign_extend:DI (reg:SI 70 [ D.2941 ]))) ./trunk/TRIE_T.c:140 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 72)
+        (mem/f:DI (plus:DI (mult:DI (reg:DI 71)
+                    (const_int 8 [0x8]))
+                (reg/f:DI 68)) [2 _3->nodo S8 A64])) ./trunk/TRIE_T.c:140 -1
+     (nil))
+(insn 14 13 18 2 (set (reg:DI 63 [ <retval> ])
+        (reg/f:DI 72)) ./trunk/TRIE_T.c:140 -1
+     (nil))
+(insn 18 14 21 2 (set (reg/i:DI 0 ax)
+        (reg:DI 63 [ <retval> ])) ./trunk/TRIE_T.c:141 -1
+     (nil))
+(insn 21 18 0 2 (use (reg/i:DI 0 ax)) ./trunk/TRIE_T.c:141 -1
+     (nil))
+
+;; Function getTotalKeysBeginningWith (getTotalKeysBeginningWith, funcdef_no=48, decl_uid=2284, cgraph_uid=48)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 4 2 (set (reg:SI 65)
+        (reg:SI 5 di [ a ])) ./trunk/TRIE_T.c:143 -1
+     (nil))
+(insn 4 2 5 2 (set (reg/v/f:DI 66 [ t ])
+        (reg:DI 4 si [ t ])) ./trunk/TRIE_T.c:143 -1
+     (nil))
+(insn 5 4 3 2 (set (reg:SI 68)
+        (reg:SI 1 dx [ offset ])) ./trunk/TRIE_T.c:143 -1
+     (nil))
+(insn 3 5 6 2 (set (reg/v:QI 64 [ a ])
+        (subreg:QI (reg:SI 65) 0)) ./trunk/TRIE_T.c:143 -1
+     (nil))
+(insn 6 3 7 2 (set (reg/v:QI 67 [ offset ])
+        (subreg:QI (reg:SI 68) 0)) ./trunk/TRIE_T.c:143 -1
+     (nil))
+(note 7 6 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 7 20 2 (var_location:DI raiz (reg/v/f:DI 66 [ t ])) ./trunk/TRIE_T.c:143 -1
+     (nil))
+(debug_insn 20 10 11 2 (var_location:SI D#15 (minus:SI (sign_extend:SI (reg/v:QI 64 [ a ]))
+        (sign_extend:SI (reg/v:QI 67 [ offset ])))) ./trunk/TRIE_T.c:145 -1
+     (nil))
+(debug_insn 11 20 12 2 (var_location:SI total (mem/j:SI (plus:DI (ashift:DI (sign_extend:DI (debug_expr:SI D#15))
+                (const_int 2 [0x2]))
+            (reg/v/f:DI 66 [ t ])) [0 MEM[(struct TRIE_T *)t_1(D)].nr_letters S4 A32])) ./trunk/TRIE_T.c:144 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 70 [ D.2946 ])
+        (sign_extend:SI (reg/v:QI 64 [ a ]))) ./trunk/TRIE_T.c:144 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 71 [ D.2946 ])
+        (sign_extend:SI (reg/v:QI 67 [ offset ]))) ./trunk/TRIE_T.c:144 -1
+     (nil))
+(insn 14 13 15 2 (parallel [
+            (set (reg:SI 72 [ D.2946 ])
+                (minus:SI (reg:SI 70 [ D.2946 ])
+                    (reg:SI 71 [ D.2946 ])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:144 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 73)
+        (sign_extend:DI (reg:SI 72 [ D.2946 ]))) ./trunk/TRIE_T.c:144 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 74)
+        (mem:SI (plus:DI (mult:DI (reg:DI 73)
+                    (const_int 4 [0x4]))
+                (reg/v/f:DI 66 [ t ])) [4 MEM[(struct TRIE_T *)t_1(D)].nr_letters S4 A32])) ./trunk/TRIE_T.c:145 -1
+     (nil))
+(insn 17 16 22 2 (set (reg:SI 63 [ <retval> ])
+        (reg:SI 74)) ./trunk/TRIE_T.c:145 -1
+     (nil))
+(insn 22 17 25 2 (set (reg/i:SI 0 ax)
+        (reg:SI 63 [ <retval> ])) ./trunk/TRIE_T.c:146 -1
+     (nil))
+(insn 25 22 0 2 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:146 -1
+     (nil))
+
+;; Function getTotalKeys (getTotalKeys, funcdef_no=49, decl_uid=2280, cgraph_uid=49)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:DI 61 [ t ])
+        (reg:DI 5 di [ t ])) ./trunk/TRIE_T.c:149 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:DI raiz (reg/v/f:DI 61 [ t ])) ./trunk/TRIE_T.c:149 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 63)
+        (mem:SI (plus:DI (reg/v/f:DI 61 [ t ])
+                (const_int 112 [0x70])) [4 MEM[(struct TRIE_T *)t_1(D)].total_keys+0 S4 A64])) ./trunk/TRIE_T.c:150 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:SI 60 [ <retval> ])
+        (reg:SI 63)) ./trunk/TRIE_T.c:150 -1
+     (nil))
+(insn 12 8 15 2 (set (reg/i:SI 0 ax)
+        (reg:SI 60 [ <retval> ])) ./trunk/TRIE_T.c:151 -1
+     (nil))
+(insn 15 12 0 2 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:151 -1
+     (nil))
+
+;; Function getFolhaControl (getFolhaControl, funcdef_no=50, decl_uid=2286, cgraph_uid=50)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:DI 61 [ f ])
+        (reg:DI 5 di [ f ])) ./trunk/TRIE_T.c:154 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:DI aux (reg/v/f:DI 61 [ f ])) ./trunk/TRIE_T.c:154 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 63)
+        (mem:SI (plus:DI (reg/v/f:DI 61 [ f ])
+                (const_int 528 [0x210])) [4 MEM[(struct NODO *)f_1(D)].control+0 S4 A64])) ./trunk/TRIE_T.c:155 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:SI 60 [ <retval> ])
+        (reg:SI 63)) ./trunk/TRIE_T.c:155 -1
+     (nil))
+(insn 12 8 15 2 (set (reg/i:SI 0 ax)
+        (reg:SI 60 [ <retval> ])) ./trunk/TRIE_T.c:156 -1
+     (nil))
+(insn 15 12 0 2 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:156 -1
+     (nil))
+
+;; Function getNodeInfo (getNodeInfo, funcdef_no=51, decl_uid=2291, cgraph_uid=51)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:DI 61 [ node ])
+        (reg:DI 5 di [ node ])) ./trunk/TRIE_T.c:158 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:DI aux (reg/v/f:DI 61 [ node ])) ./trunk/TRIE_T.c:158 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:DI 63)
+        (mem/f:DI (plus:DI (reg/v/f:DI 61 [ node ])
+                (const_int 520 [0x208])) [2 MEM[(struct NODO *)node_1(D)].info+0 S8 A64])) ./trunk/TRIE_T.c:159 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:DI 60 [ <retval> ])
+        (reg/f:DI 63)) ./trunk/TRIE_T.c:159 -1
+     (nil))
+(insn 12 8 15 2 (set (reg/i:DI 0 ax)
+        (reg:DI 60 [ <retval> ])) ./trunk/TRIE_T.c:160 -1
+     (nil))
+(insn 15 12 0 2 (use (reg/i:DI 0 ax)) ./trunk/TRIE_T.c:160 -1
+     (nil))
+
+;; Function setNodeInfo (setNodeInfo, funcdef_no=52, decl_uid=2289, cgraph_uid=52)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 59 [ node ])
+        (reg:DI 5 di [ node ])) ./trunk/TRIE_T.c:162 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 60 [ info ])
+        (reg:DI 4 si [ info ])) ./trunk/TRIE_T.c:162 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (var_location:DI aux (reg/v/f:DI 59 [ node ])) ./trunk/TRIE_T.c:162 -1
+     (nil))
+(insn 8 7 0 2 (set (mem/f:DI (plus:DI (reg/v/f:DI 59 [ node ])
+                (const_int 520 [0x208])) [2 MEM[(struct NODO *)node_1(D)].info+0 S8 A64])
+        (reg/v/f:DI 60 [ info ])) ./trunk/TRIE_T.c:163 -1
+     (nil))
+
+;; Function getLetters (getLetters, funcdef_no=53, decl_uid=2313, cgraph_uid=53)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 4->6 redirected to 7
+deleting block 6
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 3 0 8 NOTE_INSN_DELETED)
+(note 8 3 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 4 8 5 2 (set (reg/v/f:DI 63 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:166 -1
+     (nil))
+(insn 5 4 6 2 (set (reg/v/f:DI 64 [ v ])
+        (reg:DI 4 si [ v ])) ./trunk/TRIE_T.c:166 -1
+     (nil))
+(note 6 5 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 6 11 2 (var_location:DI raiz (reg/v/f:DI 63 [ trie ])) ./trunk/TRIE_T.c:166 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:169 -1
+     (nil))
+(debug_insn 12 11 7 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(insn 7 12 24 2 (set (reg:DI 62 [ ivtmp.134 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:166 -1
+     (nil))
+(code_label 24 7 13 4 88 "" [1 uses])
+(note 13 24 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 4 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 61 [ D.2972 ])
+        (mem:SI (plus:DI (reg/v/f:DI 63 [ trie ])
+                (reg:DI 62 [ ivtmp.134 ])) [5 MEM[base: trie_3(D), index: ivtmp.134_16, offset: 0B]+0 S4 A32])) ./trunk/TRIE_T.c:170 -1
+     (nil))
+(insn 16 15 17 4 (set (mem:SI (plus:DI (reg/v/f:DI 64 [ v ])
+                (reg:DI 62 [ ivtmp.134 ])) [4 MEM[base: v_7(D), index: ivtmp.134_16, offset: 0B]+0 S4 A32])
+        (reg:SI 61 [ D.2972 ])) ./trunk/TRIE_T.c:170 -1
+     (nil))
+(debug_insn 17 16 18 4 (var_location:SI i (debug_expr:SI D#16)) ./trunk/TRIE_T.c:169 -1
+     (nil))
+(debug_insn 18 17 19 4 (var_location:SI i (debug_expr:SI D#16)) -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg:DI 62 [ ivtmp.134 ])
+                (plus:DI (reg:DI 62 [ ivtmp.134 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 20 19 21 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 62 [ ivtmp.134 ])
+            (const_int 104 [0x68]))) ./trunk/TRIE_T.c:169 -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 29)
+            (pc))) ./trunk/TRIE_T.c:169 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 384 [0x180])
+        (nil))
+ -> 29)
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 23 22 25 5 (var_location:SI i (debug_expr:SI D#16)) -1
+     (nil))
+(jump_insn 25 23 26 5 (set (pc)
+        (label_ref 24)) -1
+     (nil)
+ -> 24)
+(barrier 26 25 29)
+(code_label 29 26 30 7 86 "" [1 uses])
+(note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function trie_free (trie_free, funcdef_no=57, decl_uid=2310, cgraph_uid=57)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+deleting block 15
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 3 0 12 NOTE_INSN_DELETED)
+(note 12 3 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 4 12 5 2 (set (reg/v/f:DI 69 [ t ])
+        (reg:DI 5 di [ t ])) ./trunk/TRIE_T.c:219 -1
+     (nil))
+(note 5 4 14 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 14 5 15 2 (var_location:DI trie (reg/v/f:DI 69 [ t ])) ./trunk/TRIE_T.c:219 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:DI free_list (const_int 0 [0])) ./trunk/TRIE_T.c:223 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/v/f:DI 62 [ node ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 69 [ t ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)t_6(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:225 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 62 [ node ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:225 -1
+     (nil))
+(jump_insn 18 17 77 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) ./trunk/TRIE_T.c:225 -1
+     (expr_list:REG_BR_PROB (const_int 8500 [0x2134])
+        (nil))
+ -> 23)
+(code_label 77 18 19 4 95 "" [1 uses])
+(note 19 77 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 4 (set (reg:DI 5 di)
+        (reg/v/f:DI 69 [ t ])) ./trunk/TRIE_T.c:246 -1
+     (nil))
+(call_insn/j 21 20 22 4 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x2b18453f5a00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:246 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(barrier 22 21 23)
+(code_label 23 22 24 5 90 "" [1 uses])
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 25 24 26 5 (var_location:DI list (debug_implicit_ptr:DI free_list)) ./trunk/TRIE_T.c:226 -1
+     (nil))
+(debug_insn 26 25 27 5 (var_location:DI node (reg/v/f:DI 62 [ node ])) ./trunk/TRIE_T.c:226 -1
+     (nil))
+(insn 27 26 28 5 (set (mem/f:DI (plus:DI (reg/v/f:DI 62 [ node ])
+                (const_int 512 [0x200])) [2 node_8->aux+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:208 -1
+     (nil))
+(debug_insn 28 27 29 5 (var_location:DI free_list (reg/v/f:DI 62 [ node ])) ./trunk/TRIE_T.c:209 -1
+     (nil))
+(debug_insn 29 28 8 5 (var_location:DI free_list (reg/v/f:DI 62 [ node ])) -1
+     (nil))
+(insn 8 29 83 5 (set (reg/v/f:DI 66 [ node ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:208 -1
+     (nil))
+(code_label 83 8 30 6 96 "" [1 uses])
+(note 30 83 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 6 (var_location:DI free_list (reg/v/f:DI 62 [ node ])) -1
+     (nil))
+(debug_insn 32 31 33 6 (var_location:DI list (debug_implicit_ptr:DI free_list)) -1
+     (nil))
+(debug_insn 33 32 34 6 (var_location:DI result (reg/v/f:DI 62 [ node ])) ./trunk/TRIE_T.c:214 -1
+     (nil))
+(debug_insn 34 33 35 6 (var_location:DI free_list (reg/v/f:DI 66 [ node ])) ./trunk/TRIE_T.c:215 -1
+     (nil))
+(debug_insn 35 34 36 6 (var_location:DI node (clobber (const_int 0 [0]))) ./trunk/TRIE_T.c:230 -1
+     (nil))
+(debug_insn 36 35 37 6 (var_location:SI i (const_int 0 [0])) ./trunk/TRIE_T.c:232 -1
+     (nil))
+(debug_insn 37 36 38 6 (var_location:DI free_list (reg/v/f:DI 66 [ node ])) -1
+     (nil))
+(debug_insn 38 37 9 6 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(insn 9 38 60 6 (set (reg:DI 65 [ ivtmp.146 ])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:208 -1
+     (nil))
+(code_label 60 9 39 7 93 "" [1 uses])
+(note 39 60 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 7 (var_location:DI free_list (reg/v/f:DI 66 [ node ])) -1
+     (nil))
+(debug_insn 41 40 42 7 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 42 41 43 7 (set (reg/v/f:DI 63 [ node ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 62 [ node ])
+                (reg:DI 65 [ ivtmp.146 ])) [3 MEM[base: node_32, index: ivtmp.146_24, offset: 0B]+0 S8 A64])) ./trunk/TRIE_T.c:233 -1
+     (nil))
+(insn 43 42 44 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 63 [ node ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:233 -1
+     (nil))
+(jump_insn 44 43 45 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) ./trunk/TRIE_T.c:233 -1
+     (expr_list:REG_BR_PROB (const_int 1500 [0x5dc])
+        (nil))
+ -> 50)
+(note 45 44 46 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 47 8 (var_location:DI list (debug_implicit_ptr:DI free_list)) ./trunk/TRIE_T.c:234 -1
+     (nil))
+(debug_insn 47 46 48 8 (var_location:DI node (reg/v/f:DI 63 [ node ])) ./trunk/TRIE_T.c:234 -1
+     (nil))
+(insn 48 47 49 8 (set (mem/f:DI (plus:DI (reg/v/f:DI 63 [ node ])
+                (const_int 512 [0x200])) [2 node_12->aux+0 S8 A64])
+        (reg/v/f:DI 66 [ node ])) ./trunk/TRIE_T.c:208 -1
+     (nil))
+(debug_insn 49 48 10 8 (var_location:DI free_list (reg/v/f:DI 63 [ node ])) ./trunk/TRIE_T.c:209 -1
+     (nil))
+(insn 10 49 50 8 (set (reg/v/f:DI 66 [ node ])
+        (reg/v/f:DI 63 [ node ])) ./trunk/TRIE_T.c:208 -1
+     (nil))
+(code_label 50 10 51 9 91 "" [1 uses])
+(note 51 50 52 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 52 51 53 9 (var_location:DI free_list (reg/v/f:DI 66 [ node ])) -1
+     (nil))
+(debug_insn 53 52 54 9 (var_location:SI i (debug_expr:SI D#17)) ./trunk/TRIE_T.c:232 -1
+     (nil))
+(debug_insn 54 53 55 9 (var_location:DI free_list (reg/v/f:DI 66 [ node ])) -1
+     (nil))
+(debug_insn 55 54 56 9 (var_location:SI i (debug_expr:SI D#17)) -1
+     (nil))
+(insn 56 55 57 9 (parallel [
+            (set (reg:DI 65 [ ivtmp.146 ])
+                (plus:DI (reg:DI 65 [ ivtmp.146 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 57 56 58 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 65 [ ivtmp.146 ])
+            (const_int 512 [0x200]))) ./trunk/TRIE_T.c:232 -1
+     (nil))
+(jump_insn 58 57 59 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) ./trunk/TRIE_T.c:232 -1
+     (expr_list:REG_BR_PROB (const_int 156 [0x9c])
+        (nil))
+ -> 63)
+(note 59 58 61 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 61 59 62 10 (set (pc)
+        (label_ref 60)) -1
+     (nil)
+ -> 60)
+(barrier 62 61 63)
+(code_label 63 62 64 11 92 "" [1 uses])
+(note 64 63 11 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 11 64 65 11 (set (reg/v/f:DI 61 [ node ])
+        (reg/v/f:DI 66 [ node ])) -1
+     (nil))
+(insn 65 11 66 11 (set (reg/f:DI 64 [ D.2984 ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 62 [ node ])
+                (const_int 520 [0x208])) [2 node_32->info+0 S8 A64])) ./trunk/TRIE_T.c:238 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 64 [ D.2984 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:238 -1
+     (nil))
+(jump_insn 67 66 68 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 72)
+            (pc))) ./trunk/TRIE_T.c:238 -1
+     (expr_list:REG_BR_PROB (const_int 3017 [0xbc9])
+        (nil))
+ -> 72)
+(note 68 67 69 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 12 (set (reg:DI 5 di)
+        (reg/f:DI 64 [ D.2984 ])) ./trunk/TRIE_T.c:239 -1
+     (nil))
+(call_insn 70 69 71 12 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x2b18453f5a00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:239 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 71 70 72 12 (set (mem/f:DI (plus:DI (reg/v/f:DI 62 [ node ])
+                (const_int 520 [0x208])) [2 node_32->info+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:240 -1
+     (nil))
+(code_label 72 71 73 13 94 "" [1 uses])
+(note 73 72 74 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 75 13 (set (reg:DI 5 di)
+        (reg/v/f:DI 62 [ node ])) ./trunk/TRIE_T.c:243 -1
+     (nil))
+(call_insn 75 74 76 13 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x2b18453f5a00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:243 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(debug_insn 76 75 78 13 (var_location:DI free_list (reg/v/f:DI 61 [ node ])) -1
+     (nil))
+(insn 78 76 79 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 61 [ node ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:229 -1
+     (nil))
+(jump_insn 79 78 80 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) ./trunk/TRIE_T.c:229 -1
+     (expr_list:REG_BR_PROB (const_int 900 [0x384])
+        (nil))
+ -> 77)
+(note 80 79 81 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 82 14 (set (reg/f:DI 68 [ D.2985 ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 61 [ node ])
+                (const_int 512 [0x200])) [2 node_5->aux+0 S8 A64])) -1
+     (nil))
+(insn 82 81 6 14 (set (reg/v/f:DI 67 [ node ])
+        (reg/f:DI 68 [ D.2985 ])) -1
+     (nil))
+(insn 6 82 7 14 (set (reg/v/f:DI 62 [ node ])
+        (reg/v/f:DI 66 [ node ])) ./trunk/TRIE_T.c:229 -1
+     (nil))
+(insn 7 6 84 14 (set (reg/v/f:DI 66 [ node ])
+        (reg/v/f:DI 67 [ node ])) ./trunk/TRIE_T.c:229 -1
+     (nil))
+(jump_insn 84 7 85 14 (set (pc)
+        (label_ref 83)) -1
+     (nil)
+ -> 83)
+(barrier 85 84 0)
+
+;; Function delete_t (delete_t, funcdef_no=58, decl_uid=2271, cgraph_uid=58)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 9 failed.
+Forwarding edge 2->4 to 9 failed.
+Redirecting jump 20 from 8 to 9.
+Edge 5->4 redirected to 9
+Edge 6->4 redirected to 9
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 9 failed.
+Deleted label in block 4.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 65 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 66 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 66 [ key ])) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(call_insn/i 8 7 9 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x2b18453dcf00 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:250 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:DI 68)
+        (reg:DI 0 ax)) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 69)
+        (reg:DI 68)) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 59 [ D.2988 ])
+        (reg:DI 69)) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/v:SI 60 [ len ])
+        (subreg:SI (reg:DI 59 [ D.2988 ]) 0)) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI len (reg/v:SI 60 [ len ])) ./trunk/TRIE_T.c:250 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:DI raiz (reg/v/f:DI 65 [ trie ])) ./trunk/TRIE_T.c:251 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/v/f:DI 61 [ ap ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 65 [ trie ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)trie_6(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:252 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:DI ap (reg/v/f:DI 61 [ ap ])) ./trunk/TRIE_T.c:252 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg/v:SI 60 [ len ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:254 -1
+     (nil))
+(jump_insn 18 17 19 2 (set (pc)
+        (if_then_else (gt (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) ./trunk/TRIE_T.c:254 -1
+     (expr_list:REG_BR_PROB (const_int 6334 [0x18be])
+        (nil))
+ -> 22)
+(note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 20 19 21 4 (set (pc)
+        (label_ref:DI 42)) 650 {jump}
+     (nil)
+ -> 42)
+(barrier 21 20 22)
+(code_label 22 21 23 5 108 "" [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg:SI 2 cx)
+        (reg/v:SI 60 [ len ])) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 1 dx)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 4 si)
+        (reg/v/f:DI 66 [ key ])) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 5 di)
+        (reg/v/f:DI 61 [ ap ])) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(call_insn 28 27 29 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("deleteHelper") [flags 0x3]  <function_decl 0x2b1845557c00 deleteHelper>) [0 deleteHelper S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:255 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 29 28 31 5 (set (reg:SI 62 [ D.2989 ])
+        (reg:SI 0 ax)) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(insn 31 29 32 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 62 [ D.2989 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(jump_insn 32 31 33 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 42)
+            (pc))) ./trunk/TRIE_T.c:255 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 42)
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg:SI 63 [ D.2989 ])
+        (mem:SI (plus:DI (reg/v/f:DI 65 [ trie ])
+                (const_int 112 [0x70])) [4 MEM[(struct TRIE_T *)trie_6(D)].total_keys+0 S4 A64])) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 63 [ D.2989 ])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:255 -1
+     (nil))
+(jump_insn 36 35 37 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 42)
+            (pc))) ./trunk/TRIE_T.c:255 612 {*jcc_1}
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 42)
+(note 37 36 38 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 7 (parallel [
+            (set (reg:SI 70)
+                (plus:SI (reg:SI 63 [ D.2989 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:256 -1
+     (nil))
+(insn 39 38 42 7 (set (mem:SI (plus:DI (reg/v/f:DI 65 [ trie ])
+                (const_int 112 [0x70])) [4 MEM[(struct TRIE_T *)trie_6(D)].total_keys+0 S4 A64])
+        (reg:SI 70)) ./trunk/TRIE_T.c:256 -1
+     (expr_list:REG_EQUAL (plus:SI (reg:SI 63 [ D.2989 ])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(code_label 42 39 43 9 107 "" [3 uses])
+(note 43 42 0 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+
+;; Function imprimir_nodos_t (imprimir_nodos_t, funcdef_no=61, decl_uid=2296, cgraph_uid=61)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 5
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:DI 61 [ t ])
+        (reg:DI 5 di [ t ])) ./trunk/TRIE_T.c:314 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 62 [ buff ])
+        (reg:DI 4 si [ buff ])) ./trunk/TRIE_T.c:314 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:DI 63 [ intern_buff ])
+        (reg:DI 1 dx [ intern_buff ])) ./trunk/TRIE_T.c:314 -1
+     (nil))
+(insn 5 4 6 2 (set (reg/v:SI 64 [ buff_index ])
+        (reg:SI 2 cx [ buff_index ])) ./trunk/TRIE_T.c:314 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 6 10 2 (var_location:DI aux (reg/v/f:DI 61 [ t ])) ./trunk/TRIE_T.c:314 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 37 r8)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:315 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 2 cx)
+        (reg/v:SI 64 [ buff_index ])) ./trunk/TRIE_T.c:315 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 1 dx)
+        (reg/v/f:DI 63 [ intern_buff ])) ./trunk/TRIE_T.c:315 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 62 [ buff ])) ./trunk/TRIE_T.c:315 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 61 [ t ])) ./trunk/TRIE_T.c:315 -1
+     (nil))
+(call_insn/j 15 14 16 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("imprimir_nodos") [flags 0x3]  <function_decl 0x2b1845569200 imprimir_nodos>) [0 imprimir_nodos S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:315 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 37 r8))
+                        (nil)))))))
+(barrier 16 15 0)
+
+;; Function traverse_t (traverse_t, funcdef_no=62, decl_uid=2308, cgraph_uid=62)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:DI 60 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:319 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 61 [ foo ])
+        (reg:DI 4 si [ foo ])) ./trunk/TRIE_T.c:319 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:DI 62 [ arg ])
+        (reg:DI 1 dx [ arg ])) ./trunk/TRIE_T.c:319 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (var_location:DI raiz (reg/v/f:DI 60 [ trie ])) ./trunk/TRIE_T.c:319 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:DI aux (mem/f/j:DI (plus:DI (reg/v/f:DI 60 [ trie ])
+            (const_int 104 [0x68])) [0 MEM[(struct TRIE_T *)trie_1(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:320 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 63)
+        (mem/f:DI (plus:DI (reg/v/f:DI 60 [ trie ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)trie_1(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:321 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 1 dx)
+        (reg/v/f:DI 62 [ arg ])) ./trunk/TRIE_T.c:321 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 61 [ foo ])) ./trunk/TRIE_T.c:321 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (reg:DI 63)) ./trunk/TRIE_T.c:321 -1
+     (nil))
+(call_insn/j 14 13 15 2 (call (mem:QI (symbol_ref:DI ("traverse_nodo") [flags 0x3]  <function_decl 0x2b1845569100 traverse_nodo>) [0 traverse_nodo S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:321 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (nil)))))
+(barrier 15 14 0)
+
+;; Function imprimir_t (imprimir_t, funcdef_no=63, decl_uid=2299, cgraph_uid=63)
+
+Partition 0: size 64 align 16
+	intern_buff
+
+;; Generating RTL for gimple basic block 2
+Predictions for insn 29 bb 5
+  DS theory heuristics (ignored): 100.0%
+  first match heuristics: 100.0%
+  combined heuristics: 100.0%
+  noreturn call heuristics: 100.0%
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:DI 62 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:324 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 63 [ buff ])
+        (reg:DI 4 si [ buff ])) ./trunk/TRIE_T.c:324 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [2 D.2998+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:324 -1
+     (nil))
+(debug_insn 8 5 9 2 (var_location:DI raiz (reg/v/f:DI 62 [ trie ])) ./trunk/TRIE_T.c:324 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI buff_index (const_int 0 [0])) ./trunk/TRIE_T.c:326 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/v/f:DI 59 [ aux ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 62 [ trie ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)trie_1(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:327 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:DI aux (reg/v/f:DI 59 [ aux ])) ./trunk/TRIE_T.c:327 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:328 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:DI 64)
+                (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 37 r8)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 2 cx)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 1 dx)
+        (reg:DI 64)) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 63 [ buff ])) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 59 [ aux ])) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(call_insn 19 18 20 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("imprimir_nodos") [flags 0x3]  <function_decl 0x2b1845569200 imprimir_nodos>) [0 imprimir_nodos S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:329 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 37 r8))
+                        (nil)))))))
+(insn 20 19 21 2 (set (reg:SI 60 [ D.2997 ])
+        (reg:SI 0 ax)) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 21 20 25 2 (set (reg:SI 61 [ <retval> ])
+        (reg:SI 60 [ D.2997 ])) ./trunk/TRIE_T.c:329 -1
+     (nil))
+(insn 25 21 28 2 (set (reg/i:SI 0 ax)
+        (reg:SI 61 [ <retval> ])) ./trunk/TRIE_T.c:330 -1
+     (nil))
+(insn 28 25 29 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [2 D.2998+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) ./trunk/TRIE_T.c:330 -1
+     (nil))
+(jump_insn 29 28 36 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) ./trunk/TRIE_T.c:330 -1
+     (expr_list:REG_BR_PROB (const_int 9996 [0x270c])
+        (nil))
+ -> 32)
+(note 36 29 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 30 36 31 5 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x2b18456a7900 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:330 -1
+     (expr_list:REG_NORETURN (const_int 0 [0])
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (nil))
+(barrier 31 30 32)
+(code_label 32 31 37 6 121 "" [1 uses])
+(note 37 32 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 33 37 0 6 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:330 -1
+     (nil))
+
+;; Function imprimir_t_null_info (imprimir_t_null_info, funcdef_no=64, decl_uid=2302, cgraph_uid=64)
+
+Partition 0: size 64 align 16
+	intern_buff
+Partition 1: size 8 align 8
+	info
+
+;; Generating RTL for gimple basic block 2
+Predictions for insn 31 bb 5
+  DS theory heuristics (ignored): 100.0%
+  first match heuristics: 100.0%
+  combined heuristics: 100.0%
+  noreturn call heuristics: 100.0%
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:DI 62 [ trie ])
+        (reg:DI 5 di [ trie ])) ./trunk/TRIE_T.c:332 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 63 [ buff ])
+        (reg:DI 4 si [ buff ])) ./trunk/TRIE_T.c:332 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [2 D.3004+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:332 -1
+     (nil))
+(debug_insn 8 5 9 2 (var_location:DI raiz (reg/v/f:DI 62 [ trie ])) ./trunk/TRIE_T.c:332 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI buff_index (const_int 0 [0])) ./trunk/TRIE_T.c:334 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/v/f:DI 59 [ aux ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 62 [ trie ])
+                (const_int 104 [0x68])) [2 MEM[(struct TRIE_T *)trie_1(D)].raiz+0 S8 A64])) ./trunk/TRIE_T.c:335 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:DI aux (reg/v/f:DI 59 [ aux ])) ./trunk/TRIE_T.c:335 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (symbol_ref:DI ("keys") [flags 0x2]  <var_decl 0x2b18454f6da8 keys>) [4 keys+0 S4 A32])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:336 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [2 info+0 S8 A64])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:337 -1
+     (nil))
+(insn 14 13 15 2 (parallel [
+            (set (reg:DI 64)
+                (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:DI 65)
+                (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 37 r8)
+        (reg:DI 64)) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 2 cx)
+        (const_int 0 [0])) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 1 dx)
+        (reg:DI 65)) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 63 [ buff ])) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 59 [ aux ])) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("imprimir_nodos") [flags 0x3]  <function_decl 0x2b1845569200 imprimir_nodos>) [0 imprimir_nodos S1 A8])
+            (const_int 0 [0]))) ./trunk/TRIE_T.c:338 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 37 r8))
+                        (nil)))))))
+(insn 22 21 23 2 (set (reg:SI 60 [ D.3003 ])
+        (reg:SI 0 ax)) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 23 22 27 2 (set (reg:SI 61 [ <retval> ])
+        (reg:SI 60 [ D.3003 ])) ./trunk/TRIE_T.c:338 -1
+     (nil))
+(insn 27 23 30 2 (set (reg/i:SI 0 ax)
+        (reg:SI 61 [ <retval> ])) ./trunk/TRIE_T.c:339 -1
+     (nil))
+(insn 30 27 31 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [2 D.3004+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) ./trunk/TRIE_T.c:339 -1
+     (nil))
+(jump_insn 31 30 38 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) ./trunk/TRIE_T.c:339 -1
+     (expr_list:REG_BR_PROB (const_int 9996 [0x270c])
+        (nil))
+ -> 34)
+(note 38 31 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 32 38 33 5 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x2b18456a7900 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) ./trunk/TRIE_T.c:339 -1
+     (expr_list:REG_NORETURN (const_int 0 [0])
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (nil))
+(barrier 33 32 34)
+(code_label 34 33 39 6 125 "" [1 uses])
+(note 39 34 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 39 0 6 (use (reg/i:SI 0 ax)) ./trunk/TRIE_T.c:339 -1
+     (nil))

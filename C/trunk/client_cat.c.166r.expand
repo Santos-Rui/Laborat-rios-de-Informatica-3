@@ -1,0 +1,624 @@
+
+;; Function CLIENT_CAT_init (CLIENT_CAT_init, funcdef_no=11, decl_uid=1615, cgraph_uid=11)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 5
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ./trunk/client_cat.c:11 -1
+     (nil))
+(call_insn/j 6 5 7 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("init") [flags 0x41]  <function_decl 0x2b0d3c637000 init>) [0 init S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:11 -1
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:QI 0 ax))
+        (nil)))
+(barrier 7 6 0)
+
+;; Function CLIENT_CAT_insert (CLIENT_CAT_insert, funcdef_no=12, decl_uid=1618, cgraph_uid=12)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 5
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 61 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:16 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 62 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/client_cat.c:16 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (var_location:DI t (reg/v/f:DI 61 [ catalogo ])) ./trunk/client_cat.c:16 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) ./trunk/client_cat.c:17 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 62 [ key ])) ./trunk/client_cat.c:17 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 61 [ catalogo ])) ./trunk/client_cat.c:17 -1
+     (nil))
+(call_insn/j 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("insert_t") [flags 0x41]  <function_decl 0x2b0d3c637100 insert_t>) [0 insert_t S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:17 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (nil)))))
+(barrier 12 11 0)
+
+;; Function CLIENT_CAT_search (CLIENT_CAT_search, funcdef_no=13, decl_uid=1621, cgraph_uid=13)
+
+Partition 0: size 8 align 8
+	f
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 61 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:22 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 62 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/client_cat.c:22 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (parallel [
+            (set (reg:DI 63)
+                (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/client_cat.c:23 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 1 dx)
+        (reg:DI 63)) ./trunk/client_cat.c:23 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 62 [ key ])) ./trunk/client_cat.c:23 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 61 [ catalogo ])) ./trunk/client_cat.c:23 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("search_t") [flags 0x41]  <function_decl 0x2b0d3c637300 search_t>) [0 search_t S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:23 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (nil)))))
+(insn 12 11 13 2 (set (reg/v:SI 59 [ existe ])
+        (reg:SI 0 ax)) ./trunk/client_cat.c:23 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI existe (reg/v:SI 59 [ existe ])) ./trunk/client_cat.c:23 -1
+     (nil))
+(insn 14 13 18 2 (set (reg:SI 60 [ <retval> ])
+        (reg/v:SI 59 [ existe ])) ./trunk/client_cat.c:24 -1
+     (nil))
+(insn 18 14 21 2 (set (reg/i:SI 0 ax)
+        (reg:SI 60 [ <retval> ])) ./trunk/client_cat.c:25 -1
+     (nil))
+(insn 21 18 0 2 (use (reg/i:SI 0 ax)) ./trunk/client_cat.c:25 -1
+     (nil))
+
+;; Function CLIENT_CAT_delete (CLIENT_CAT_delete, funcdef_no=14, decl_uid=1624, cgraph_uid=14)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 59 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:28 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 60 [ key ])
+        (reg:DI 4 si [ key ])) ./trunk/client_cat.c:28 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 60 [ key ])) ./trunk/client_cat.c:28 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 59 [ catalogo ])) ./trunk/client_cat.c:28 -1
+     (nil))
+(call_insn/j 9 8 10 2 (call (mem:QI (symbol_ref:DI ("delete_t") [flags 0x41]  <function_decl 0x2b0d3c637200 delete_t>) [0 delete_t S1 A8])
+        (const_int 0 [0])) ./trunk/client_cat.c:28 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(barrier 10 9 0)
+
+;; Function CLIENT_CAT_destroy (CLIENT_CAT_destroy, funcdef_no=15, decl_uid=1626, cgraph_uid=15)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:DI 59 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:32 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 59 [ catalogo ])) ./trunk/client_cat.c:32 -1
+     (nil))
+(call_insn/j 7 6 8 2 (call (mem:QI (symbol_ref:DI ("trie_free") [flags 0x41]  <function_decl 0x2b0d3c637e00 trie_free>) [0 trie_free S1 A8])
+        (const_int 0 [0])) ./trunk/client_cat.c:32 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(barrier 8 7 0)
+
+;; Function CLIENT_CAT_getLetters (CLIENT_CAT_getLetters, funcdef_no=16, decl_uid=1629, cgraph_uid=16)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 59 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:36 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 60 [ v ])
+        (reg:DI 4 si [ v ])) ./trunk/client_cat.c:36 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (var_location:DI t (reg/v/f:DI 59 [ catalogo ])) ./trunk/client_cat.c:36 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 60 [ v ])) ./trunk/client_cat.c:37 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 59 [ catalogo ])) ./trunk/client_cat.c:37 -1
+     (nil))
+(call_insn/j 10 9 11 2 (call (mem:QI (symbol_ref:DI ("getLetters") [flags 0x41]  <function_decl 0x2b0d3c637f00 getLetters>) [0 getLetters S1 A8])
+        (const_int 0 [0])) ./trunk/client_cat.c:37 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(barrier 11 10 0)
+
+;; Function CLIENT_CAT_getKeys (CLIENT_CAT_getKeys, funcdef_no=17, decl_uid=1635, cgraph_uid=17)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 5
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:DI 61 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:40 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 62 [ buff ])
+        (reg:DI 4 si [ buff ])) ./trunk/client_cat.c:40 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (var_location:DI t (reg/v/f:DI 61 [ catalogo ])) ./trunk/client_cat.c:40 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 62 [ buff ])) ./trunk/client_cat.c:41 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (reg/v/f:DI 61 [ catalogo ])) ./trunk/client_cat.c:41 -1
+     (nil))
+(call_insn/j 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("imprimir_t") [flags 0x41]  <function_decl 0x2b0d3c637b00 imprimir_t>) [0 imprimir_t S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:41 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(barrier 11 10 0)
+
+;; Function CLIENT_CAT_getTotalKeysBeginningWith (CLIENT_CAT_getTotalKeysBeginningWith, funcdef_no=18, decl_uid=1632, cgraph_uid=18)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 5
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 4 2 (set (reg:SI 63)
+        (reg:SI 5 di [ a ])) ./trunk/client_cat.c:44 -1
+     (nil))
+(insn 4 2 3 2 (set (reg/v/f:DI 64 [ catalogo ])
+        (reg:DI 4 si [ catalogo ])) ./trunk/client_cat.c:44 -1
+     (nil))
+(insn 3 4 5 2 (set (reg/v:QI 62 [ a ])
+        (subreg:QI (reg:SI 63) 0)) ./trunk/client_cat.c:44 -1
+     (nil))
+(note 5 3 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:SI 65 [ D.1876 ])
+        (sign_extend:SI (reg/v:QI 62 [ a ]))) ./trunk/client_cat.c:44 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 1 dx)
+        (const_int 65 [0x41])) ./trunk/client_cat.c:44 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 64 [ catalogo ])) ./trunk/client_cat.c:44 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 5 di)
+        (reg:SI 65 [ D.1876 ])) ./trunk/client_cat.c:44 -1
+     (nil))
+(call_insn/j 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getTotalKeysBeginningWith") [flags 0x41]  <function_decl 0x2b0d3c637600 getTotalKeysBeginningWith>) [0 getTotalKeysBeginningWith S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:44 -1
+     (nil)
+    (expr_list:REG_BR_PRED (use (reg:SI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 13 12 0)
+
+;; Function CLIENT_CAT_getKeysPrefix (CLIENT_CAT_getKeysPrefix, funcdef_no=19, decl_uid=1639, cgraph_uid=19)
+
+Partition 0: size 64 align 16
+	intern_buff
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+Predictions for insn 53 bb 7
+  DS theory heuristics (ignored): 100.0%
+  first match heuristics: 100.0%
+  combined heuristics: 100.0%
+  noreturn call heuristics: 100.0%
+deleting block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:DI 75 [ catalogo ])
+        (reg:DI 5 di [ catalogo ])) ./trunk/client_cat.c:47 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 76 [ buff ])
+        (reg:DI 4 si [ buff ])) ./trunk/client_cat.c:47 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:SI 78)
+        (reg:SI 1 dx [ prefix ])) ./trunk/client_cat.c:47 -1
+     (nil))
+(insn 5 4 6 2 (set (reg/v:QI 77 [ prefix ])
+        (subreg:QI (reg:SI 78) 0)) ./trunk/client_cat.c:47 -1
+     (nil))
+(note 6 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 6 10 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [2 D.1887+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/client_cat.c:47 -1
+     (nil))
+(debug_insn 10 7 11 2 (var_location:DI t (reg/v/f:DI 75 [ catalogo ])) ./trunk/client_cat.c:47 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI index (const_int 1 [0x1])) ./trunk/client_cat.c:49 -1
+     (nil))
+(call_insn/u 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__ctype_b_loc") [flags 0x41]  <function_decl 0x2b0d3c63d900 __ctype_b_loc>) [0 __ctype_b_loc S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:52 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 13 12 14 2 (set (reg/f:DI 59 [ D.1880 ])
+        (reg:DI 0 ax)) ./trunk/client_cat.c:52 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 61 [ D.1882 ])
+        (sign_extend:DI (reg/v:QI 77 [ prefix ]))) ./trunk/client_cat.c:52 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:DI 79)
+        (mem/f:DI (reg/f:DI 59 [ D.1880 ]) [2 *_3+0 S8 A64])) ./trunk/client_cat.c:52 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:HI 81)
+        (mem:HI (plus:DI (mult:DI (reg:DI 61 [ D.1882 ])
+                    (const_int 2 [0x2]))
+                (reg/f:DI 79)) [4 *_9+0 S2 A16])) ./trunk/client_cat.c:52 -1
+     (nil))
+(insn 17 16 18 2 (parallel [
+            (set (reg:HI 80 [ D.1883 ])
+                (and:HI (reg:HI 81)
+                    (const_int 512 [0x200])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/client_cat.c:52 -1
+     (expr_list:REG_EQUAL (and:HI (mem:HI (plus:DI (mult:DI (reg:DI 61 [ D.1882 ])
+                        (const_int 2 [0x2]))
+                    (reg/f:DI 79)) [4 *_9+0 S2 A16])
+            (const_int 512 [0x200]))
+        (nil)))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 80 [ D.1883 ])
+            (const_int 0 [0]))) ./trunk/client_cat.c:52 -1
+     (nil))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) ./trunk/client_cat.c:52 -1
+     (expr_list:REG_BR_PROB (const_int 3900 [0xf3c])
+        (nil))
+ -> 28)
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 21 20 22 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__ctype_toupper_loc") [flags 0x41]  <function_decl 0x2b0d3c63db00 __ctype_toupper_loc>) [0 __ctype_toupper_loc S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:53 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 22 21 23 4 (set (reg/f:DI 65 [ D.1884 ])
+        (reg:DI 0 ax)) ./trunk/client_cat.c:53 -1
+     (nil))
+(debug_insn 23 22 24 4 (var_location:SI __res (mem:SI (plus:DI (ashift:DI (reg:DI 61 [ D.1882 ])
+                (const_int 2 [0x2]))
+            (mem/f:DI (reg/f:DI 65 [ D.1884 ]) [0 *_11+0 S8 A64])) [0 *_14+0 S4 A32])) ./trunk/client_cat.c:53 -1
+     (nil))
+(insn 24 23 25 4 (set (reg/f:DI 82)
+        (mem/f:DI (reg/f:DI 65 [ D.1884 ]) [2 *_11+0 S8 A64])) ./trunk/client_cat.c:53 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 83)
+        (mem:SI (plus:DI (mult:DI (reg:DI 61 [ D.1882 ])
+                    (const_int 4 [0x4]))
+                (reg/f:DI 82)) [3 *_14+0 S4 A32])) ./trunk/client_cat.c:53 -1
+     (nil))
+(insn 26 25 27 4 (set (reg/v:QI 77 [ prefix ])
+        (subreg:QI (reg:SI 83) 0)) ./trunk/client_cat.c:53 -1
+     (nil))
+(debug_insn 27 26 28 4 (var_location:QI prefix (reg/v:QI 77 [ prefix ])) ./trunk/client_cat.c:53 -1
+     (nil))
+(code_label 28 27 29 5 11 "" [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 31 5 (var_location:QI prefix (reg/v:QI 77 [ prefix ])) -1
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 84 [ D.1886 ])
+        (sign_extend:SI (reg/v:QI 77 [ prefix ]))) ./trunk/client_cat.c:55 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:DI 4 si)
+        (reg/v/f:DI 75 [ catalogo ])) ./trunk/client_cat.c:55 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 5 di)
+        (reg:SI 84 [ D.1886 ])) ./trunk/client_cat.c:55 -1
+     (nil))
+(call_insn 34 33 35 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getFirtstCharKeyNode") [flags 0x41]  <function_decl 0x2b0d3c637400 getFirtstCharKeyNode>) [0 getFirtstCharKeyNode S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:55 -1
+     (nil)
+    (expr_list:REG_BR_PRED (use (reg:SI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 35 34 36 5 (set (reg/v/f:DI 71 [ ap ])
+        (reg:DI 0 ax)) ./trunk/client_cat.c:55 -1
+     (nil))
+(debug_insn 36 35 37 5 (var_location:DI ap (reg/v/f:DI 71 [ ap ])) ./trunk/client_cat.c:55 -1
+     (nil))
+(insn 37 36 38 5 (set (mem/j/c:QI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 intern_buff+0 S1 A128])
+        (reg/v:QI 77 [ prefix ])) ./trunk/client_cat.c:56 -1
+     (nil))
+(insn 38 37 39 5 (parallel [
+            (set (reg:DI 85)
+                (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) ./trunk/client_cat.c:57 -1
+     (nil))
+(insn 39 38 40 5 (set (reg:SI 2 cx)
+        (const_int 1 [0x1])) ./trunk/client_cat.c:57 -1
+     (nil))
+(insn 40 39 41 5 (set (reg:DI 1 dx)
+        (reg:DI 85)) ./trunk/client_cat.c:57 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:DI 4 si)
+        (reg/v/f:DI 76 [ buff ])) ./trunk/client_cat.c:57 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:DI 5 di)
+        (reg/v/f:DI 71 [ ap ])) ./trunk/client_cat.c:57 -1
+     (nil))
+(call_insn 43 42 44 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("imprimir_nodos_t") [flags 0x41]  <function_decl 0x2b0d3c637a00 imprimir_nodos_t>) [0 imprimir_nodos_t S1 A8])
+            (const_int 0 [0]))) ./trunk/client_cat.c:57 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 44 43 45 5 (set (reg:SI 72 [ D.1886 ])
+        (reg:SI 0 ax)) ./trunk/client_cat.c:57 -1
+     (nil))
+(insn 45 44 49 5 (set (reg:SI 74 [ <retval> ])
+        (reg:SI 72 [ D.1886 ])) ./trunk/client_cat.c:57 -1
+     (nil))
+(insn 49 45 52 5 (set (reg/i:SI 0 ax)
+        (reg:SI 74 [ <retval> ])) ./trunk/client_cat.c:58 -1
+     (nil))
+(insn 52 49 53 5 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [2 D.1887+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) ./trunk/client_cat.c:58 -1
+     (nil))
+(jump_insn 53 52 60 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) ./trunk/client_cat.c:58 -1
+     (expr_list:REG_BR_PROB (const_int 9996 [0x270c])
+        (nil))
+ -> 56)
+(note 60 53 54 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn 54 60 55 7 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x2b0d3c68e500 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) ./trunk/client_cat.c:58 -1
+     (expr_list:REG_NORETURN (const_int 0 [0])
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (nil))
+(barrier 55 54 56)
+(code_label 56 55 61 8 12 "" [1 uses])
+(note 61 56 57 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 57 61 0 8 (use (reg/i:SI 0 ax)) ./trunk/client_cat.c:58 -1
+     (nil))
